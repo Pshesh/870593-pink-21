@@ -16,7 +16,7 @@
     </a>
 
     <!-- NAVIGATION -->
-    <nav class="page-header__nav">
+    <nav class="page-header__nav nav">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -56,7 +56,7 @@
       Конкурс
     </h1>
 
-    <section class="page-main__intro">
+    <section class="page-main__intro intro">
       <div class="intro__wrapper">
         <h2 class="intro__header">
           Конкурс на самое<br>
@@ -69,6 +69,9 @@
 
     <!-- FORM -->
     <section class="page-main__contest">
+
+      <h3 class="visually-hidden">Форма для участия в конкурсе</h3>
+
       <form class="page-main__contest-form contest-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="contest-form__wrapper">
           <p class="contest-form__header">
@@ -78,31 +81,31 @@
             <span>Пожалуйста, заполните форму ниже:</span>
           </p>
 
-          <fieldset class="contest-form__user-info">
+          <fieldset class="contest-form__user-info user-info">
             <ul class="user-info__list">
               <li class="user-info__item">
                 <label class="user-info__label">
                   Фамилия
-                  <input class="user-info__input" type="text" placeholder="Укажите фамилию *" required>
+                  <input class="user-info__input" type="text" placeholder="Укажите фамилию *" name="Last name" required>
                 </label>
               </li>
               <li class="user-info__item">
                 <label class="user-info__label">
                   Имя
-                  <input class="user-info__input" type="text" placeholder="Введите ваше имя *" required>
+                  <input class="user-info__input" type="text" placeholder="Введите ваше имя *" name="First name" required>
                 </label>
               </li>
               <li class="user-info__item">
                 <label class="user-info__label">
                   Отчество
-                  <input class="user-info__input" type="text" placeholder="Ну и отчество тоже">
+                  <input class="user-info__input" type="text" name="Patronymic" placeholder="Ну и отчество тоже">
                 </label>
               </li>
             </ul>
           </fieldset>
 
           <div class="contest-form__color-wrapper">
-            <fieldset class="contest-form__user-achieves">
+            <fieldset class="contest-form__user-achieves user-achieves">
               <legend class="user-achieves__legend">
                 Ваши безбашенные<br>
                 достижения в путешествии
@@ -111,13 +114,13 @@
                 <li class="user-achieves__item">
                   <label class="user-achieves__label">
                     <input class="user-achieves__input visually-hidden checkbox" type="checkbox"
-                      name="Сделал селфи с акулой" checked>
+                      name="Shark" checked>
                     Сделал селфи с акулой
                   </label>
                 </li>
                 <li class="user-achieves__item">
                   <label class="user-achieves__label">
-                    <input class="user-achieves__input visually-hidden checkbox" type="checkbox" name="Обгорел на пляже"
+                    <input class="user-achieves__input visually-hidden checkbox" type="checkbox" name="Sunburn"
                       checked>
                     Обгорел на пляже
                   </label>
@@ -125,27 +128,27 @@
                 <li class="user-achieves__item">
                   <label class="user-achieves__label">
                     <input class="user-achieves__input visually-hidden checkbox" type="checkbox"
-                      name="Видел Чака Норриса">
+                      name="Chuk">
                     Видел Чака Норриса
                   </label>
                 </li>
                 <li class="user-achieves__item">
                   <label class="user-achieves__label">
                     <input class="user-achieves__input visually-hidden checkbox" type="checkbox"
-                      name="Накупил сувениров">
+                      name="Souvenirs">
                     Накупил сувениров
                   </label>
                 </li>
                 <li class="user-achieves__item">
                   <label class="user-achieves__label">
-                    <input class="user-achieves__input visually-hidden checkbox" type="checkbox" name="Удержал башню"
+                    <input class="user-achieves__input visually-hidden checkbox" type="checkbox" name="Tower"
                       checked>
                     Удержал башню
                   </label>
                 </li>
                 <li class="user-achieves__item">
                   <label class="user-achieves__label">
-                    <input class="user-achieves__input visually-hidden checkbox" type="checkbox" name="">
+                    <input class="user-achieves__input visually-hidden checkbox" type="checkbox" name="Hotel">
                     Разгромил отель
                   </label>
                 </li>
@@ -153,7 +156,7 @@
             </fieldset>
           </div>
 
-          <fieldset class="contest-form__user-contacts">
+          <fieldset class="contest-form__user-contacts user-contacts">
             <legend class="user-contacts__legend">Контактная информация</legend>
             <ul class="user-contacts__list">
               <li class="user-contacts__item">
@@ -172,27 +175,27 @@
           </fieldset>
 
           <div class="contest-form__color-wrapper">
-            <fieldset class="contest-form__user-app contest-form__color-wrapper">
+            <fieldset class="contest-form__user-app user-app contest-form__color-wrapper">
               <legend class="user-app__legend">
                 С каким приложением<br>
                 путешествовали?
               </legend>
               <ul class="user-app__list">
                 <li class="user-app__item">
-                  <label class="quiz__label">
-                    <input class="quiz__input" type="radio" name="Ios" checked>
+                  <label class="user-app__label">
+                    <input class="user-app__input" type="radio" name="app" value="Ios" checked>
                     Pink для iOS
                   </label>
                 </li>
                 <li class="user-app__item">
-                  <label class="quiz__label">
-                    <input class="quiz__input" type="radio" name="Android">
+                  <label class="user-app__label">
+                    <input class="user-app__input" type="radio" name="app" value="Android">
                     Pink на Android
                   </label>
                 </li>
                 <li class="user-app__item">
-                  <label class="quiz__label">
-                    <input class="quiz__input" type="radio" name="Windows">
+                  <label class="user-app__label">
+                    <input class="user-app__input" type="radio" name="app" value="Windows">
                     Windows Phone
                   </label>
                 </li>
@@ -200,7 +203,7 @@
             </fieldset>
           </div>
 
-          <fieldset class="contest-form__user-opinion">
+          <fieldset class="contest-form__user-opinion user-opinion">
             <legend class="user-opinion__legend">Опишите свои эмоции</legend>
             <textarea class="user-opinion__text" name="opinion" cols="30" rows="10"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -220,19 +223,19 @@
       <div class="page-footer__wrapper">
 
         <div class="page-footer__logo">
-          <img src="https://via.placeholder.com/150x150">
+          <img src="https://via.placeholder.com/150x150" alt="Логотип Pink">
         </div>
 
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="socail__item">
-              <a class="socail__link" href="" aria-label="Twitter">Twitter</a>
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="Twitter">Twitter</a>
             </li>
-            <li class="socail__item">
-              <a class="socail__link" href="" aria-label="Facebook">Facebook</a>
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="Facebook">Facebook</a>
             </li>
-            <li class="socail__item">
-              <a class="socail__link" href="" aria-label="Youtube">Youtube</a>
+            <li class="social__item">
+              <a class="social__link" href="" aria-label="Youtube">Youtube</a>
             </li>
           </ul>
         </div>
