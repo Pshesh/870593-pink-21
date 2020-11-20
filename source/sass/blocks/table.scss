@@ -1,0 +1,60 @@
+.table {
+  display: inline-block;
+  border-spacing: 2px;
+
+  .table__head {
+    background-color: $bg-light;
+  }
+
+  .table__value {
+    background-color: $table-bg-dark;
+    min-width: 278px;
+    padding-top: 19px;
+    padding-bottom: 35px;
+  }
+
+  .table__value-tarif {
+    @include margin-padding-reset;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $font-light;
+  }
+
+  .table__value-price {
+    @include margin-padding-reset;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $font-light;
+  }
+
+  span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: $font-light;
+    text-transform: uppercase;
+    background-color: $bg-optional;
+    transform: rotate(-45deg);
+  }
+
+  .table__field {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $font-medium;
+    min-width: 278px;
+    background: $bg-main;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+  }
+}

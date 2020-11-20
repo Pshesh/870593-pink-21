@@ -1,0 +1,48 @@
+.intro {
+  background-color: $bg-dark;
+  background-image: url("../../img/bg-phone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $font-light;
+
+  .intro__wrapper {
+    padding-top: 95px;
+    padding-bottom: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .intro__slogan {
+    @include margin-padding-reset;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+  }
+
+  .intro__download {
+    margin-top: 320px;
+    padding-top: 28px;
+    background-color: $bg-dark;
+  }
+
+  .intro__list-wrapper {
+    margin-top: 32px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 28px;
+  }
+
+  .intro__list {
+    @include list-reset;
+    @include margin-padding-reset;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .intro__info {
+    display: block;
+    text-align: center;
+  }
+}

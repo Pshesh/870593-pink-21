@@ -1,0 +1,18 @@
+.copyright {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .copyright__text {
+    @include margin-padding-reset;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $font-medium;
+  }
+
+  .copyright__logo path {
+    fill: $html-logo-color;
+  }
+}

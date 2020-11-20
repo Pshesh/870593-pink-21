@@ -1,0 +1,30 @@
+.nav {
+  .nav__list {
+    @include list-reset;
+    @include margin-padding-reset;
+    text-align: center;
+  }
+
+  .nav__item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 2px solid black;
+  }
+
+  .nav__link {
+    color: $font-light;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .nav__toggle {
+    @include margin-padding-reset;
+    @include button-reset;
+    background: transparent;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+  }
+}
