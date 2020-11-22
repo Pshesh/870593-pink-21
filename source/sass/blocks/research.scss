@@ -1,0 +1,32 @@
+.research {
+  background-color: $bg-main;
+}
+
+.research__wrapper {
+  padding-top: 102px;
+  padding-bottom: 128px;
+}
+
+.research__title {
+  @include margin-padding-reset;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: $font-dark;
+}
+
+.research__text {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-medium;
+}
+
+.research__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $font-optional;
+}

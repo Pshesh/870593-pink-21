@@ -1,0 +1,12 @@
+.page-body {
+  @include margin-padding-reset;
+  // width: 320px;
+  // min-height: 100%;
+  // margin: 0 auto;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $font-medium;
+  position: relative;
+}

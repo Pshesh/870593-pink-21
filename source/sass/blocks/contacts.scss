@@ -1,49 +1,49 @@
 .contacts {
   background-color: $bg-main;
+}
 
-  .contacts__wrapper {
-    padding-top: 50px;
-  }
+.contacts__wrapper {
+  padding-top: 50px;
+}
 
-  .contacts__header {
-    margin-bottom: 45px;
-  }
+.contacts__header {
+  margin-bottom: 45px;
+}
 
-  .contacts__slogan {
+.contacts__slogan {
+  @include margin-padding-reset;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $font-medium;
+}
+
+.contacts__list {
+  @include list-reset;
+  @include margin-padding-reset;
+  text-align: center;
+}
+
+.contacts__item {
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  @include margin-padding-reset;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: $font-medium;
+}
+
+.contacts__info {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $font-optional;
+
+  &--adress {
     @include margin-padding-reset;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    color: $font-medium;
-  }
-
-  .contacts__list {
-    @include list-reset;
-    @include margin-padding-reset;
-    text-align: center;
-  }
-
-  .contacts__item {
-    margin-bottom: 30px;
-  }
-
-  .contacts__text {
-    @include margin-padding-reset;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    color: $font-medium;
-  }
-
-  .contacts__info {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 33px;
-    color: $font-optional;
-
-    &--adress {
-      @include margin-padding-reset;
-    }
   }
 }

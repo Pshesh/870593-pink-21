@@ -1,12 +1,13 @@
 .price {
-  background: url("../../img/price\ grey\ background.png");
+  background: url("../img/price-grey-background.png");
   background-repeat: no-repeat;
   background-position: top 15px center;
   padding-top: 143px;
   padding-bottom: 49px;
+}
 
-  .price__toggles {
-    margin: 0 auto;
-    margin-top: 45px;
-  }
+
+.price__toggles {
+  margin: 0 auto;
+  margin-top: 45px;
 }
