@@ -1,0 +1,78 @@
+// BACKGROUND
+$bg-main: #ffffff;
+$bg-light: #f2f2f2;
+$bg-medium: #283645;
+$bg-dark: #1d2631;
+$bg-black: transparentize(#000000, 0.7);
+$bg-optional: #d22856;
+
+// FONTS COLOR
+$font-light: #ffffff;
+$font-medium: #283645;
+$font-dark: #000000;
+$font-optional: #d22856;
+
+// NAVIGATION
+$nav-color: #ffffff;
+$nav-hover: #d22856;
+$nav-down: transparentize($nav-hover, 0.7);
+
+// NAVIGATION BUTTON
+$navbtn-color: #ffffff;
+$navbtn-hover: #d22856;
+$navbtn-down: transparentize($navbtn-hover, 0.7);
+
+// DOWNLOAD BUTTON
+$downloadbtn-color: #ffffff;
+$downloadbtn-hover: #d22856;
+$downloadbtn-down: transparentize($downloadbtn-hover, 0.7);
+$downloadbtn-bg: #ffffff;
+
+// SLIDER
+$slider-active-bg: #ffffff;
+$slider-active-border: #283645;
+$slider-bullet: transparentize($slider-active-border, 0.7);
+$slider-hover: transparentize($slider-active-border, 0.4);
+$slider-down: transparentize($slider-active-border, 0.9);
+
+// PHONE LINK
+$phone-color: #d22856;
+$phone-hover: #283645;
+$phone-down: transparentize($phone-hover, 0.7);
+
+// MAIL LINK
+$mail-color: #d22856;
+$mail-hover: #283645;
+$mail-down: transparentize($mail-hover, 0.7);
+
+// ADDRESS LINK
+$address-color: #d22856;
+$address-hover: #283645;
+$address-down: transparentize($address-hover, 0.7);
+
+// PINK LOGO HEADER
+$plh-color: #ffffff;
+$plh-hover: #d22856;
+$plh-down: transparentize($plh-hover, 0.7);
+
+// PINK LOGO FOOTER
+$plf-img-color: #d22856;
+$plf-img-down: transparentize($plf-img-color, 0.7);
+$plf-text-color: #283645;
+$plf-text-hover: #d22856;
+$plf-text-down: transparentize($plf-text-color, 0.7);
+
+// SOCIALS
+$social-border: transparentize(#283645, 0.9);
+$social-border-hover: #283645;
+$social-color: #d22856;
+$social-down: transparentize($social-color, 0.7);
+
+// HTML LOGO
+$html-logo-color: #d22856;
+$html-logo-hover: #283645;
+$html-logo-down: transparentize($html-logo-hover, 0.7);
+
+// TABLE
+$table-bg-light: #ffffff;
+$table-bg-dark: #283645;
