@@ -1,0 +1,31 @@
+.social__list {
+  @include list-reset;
+  @include margin-padding-reset;
+  width: 172 px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__link {
+  position: relative;
+}
+
+.social__img {
+  position: absolute;
+}
+
+.social__img--twitter {
+  top: -18px;
+  left: 18px;
+}
+
+.social__img--facebook {
+  top: -21px;
+  left: 23px;
+}
+
+.social__img--youtube {
+  top: -18px;
+  left: 23px;
+}
