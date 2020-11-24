@@ -1,0 +1,34 @@
+.user-achieves {
+  @include margin-padding-reset;
+  padding-top: 113px;
+  padding-bottom: 42px;
+  padding-left: 79px;
+  padding-right: 20px;
+  border: none;
+  background-color: $bg-light;
+}
+
+.user-achieves__legend {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-optional;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.user-achieves__list {
+  @include list-reset;
+  @include margin-padding-reset;
+}
+
+.user-achieves__item:not(:last-child) {
+  margin-bottom: 51px;
+}
+
+.user-achieves__label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-medium;
+}

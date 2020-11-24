@@ -1,0 +1,33 @@
+.user-opinion {
+  @include margin-padding-reset;
+  padding-top: 74px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 48px;
+  border: none;
+  background-color: $bg-main;
+}
+
+.user-opinion__legend {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-optional;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.user-opinion__text {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-medium;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 25px;
+}
+
+.user-opinion__text::placeholder {
+  color: $font-medium;
+}
