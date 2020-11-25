@@ -1,0 +1,52 @@
+.pop-up {
+  background-color: $bg-main;
+  // temporary
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.pop-up--failure .pop-up__wrapper {
+  padding-top: 44px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.pop-up--succes .pop-up__wrapper {
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 44px;
+  padding-bottom: 41px;
+}
+
+.pop-up__header {
+  @include margin-padding-reset;
+  margin-bottom: 37px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: $font-dark;
+}
+
+.pop-up__text {
+  @include margin-padding-reset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $font-medium;
+}
+
+.pop-up__button-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $bg-light;
+  text-align: center;
+}
+
+.pop-up--failure .pop-up__button {
+  margin-top: 44px;
+}

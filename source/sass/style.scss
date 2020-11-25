@@ -2,7 +2,6 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/mixin.scss";
-@import "blocks/page-body.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/nav.scss";
@@ -20,3 +19,11 @@
 @import "blocks/logo.scss";
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
+@import "blocks/contest.scss";
+@import "blocks/user-info.scss";
+@import "blocks/user-achieves.scss";
+@import "blocks/user-contacts.scss";
+@import "blocks/user-app.scss";
+@import "blocks/user-opinion.scss";
+@import "blocks/contest-button.scss";
+@import "blocks/pop-up.scss";

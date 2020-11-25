@@ -1,0 +1,34 @@
+.contest-form__wrapper {
+  padding-top: 54px;
+  padding-bottom: 26px;
+}
+
+.contest-form__header {
+  @include margin-padding-reset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $font-medium;
+}
+
+.contest-form__submit {
+  text-align: center;
+}
+
+.contest-form__button {
+  margin-bottom: 44px;
+}
+
+.contest-form__notice {
+  @include margin-padding-reset;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $font-medium;
+
+  span {
+    color: $font-optional;
+  }
+}

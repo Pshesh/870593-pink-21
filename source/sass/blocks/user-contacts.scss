@@ -1,0 +1,51 @@
+.user-contacts {
+  @include margin-padding-reset;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  background-color: $bg-main;
+}
+
+.user-contacts__legend {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $font-optional;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.user-contacts__list {
+  @include list-reset;
+  @include margin-padding-reset;
+}
+
+.user-contacts__item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.user-contacts__label {
+  padding-left: 43px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $font-optional;
+  text-transform: uppercase;
+}
+
+.user-contacts__input {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: $font-medium;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.user-contacts__input::placeholder {
+  color: $font-medium;
+}
