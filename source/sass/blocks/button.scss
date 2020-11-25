@@ -1,7 +1,5 @@
 .button {
   display: block;
-  color: $downloadbtn-color;
-  border: 3px solid $downloadbtn-color;
   border-radius: 30px;
   font-weight: 700;
   font-size: 18px;
@@ -9,4 +7,19 @@
   text-align: center;
   padding: 15px 35px;
   width: 280px;
+}
+
+.button--download {
+  color: $downloadbtn-color;
+  border: 3px solid $downloadbtn-color;
+}
+
+.button--submit {
+  color: $submitbtn-color;
+  border: 3px solid $submitbtn-color;
+}
+
+.button--reset {
+  color: $resetbtn-color;
+  border: 3px solid $resetbtn-color;
 }
