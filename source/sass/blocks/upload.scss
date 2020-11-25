@@ -25,9 +25,16 @@
   padding-top: 20px;
 }
 
+.upload__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .upload__button-wrapper {
   padding-top: 38px;
   padding-bottom: 41px;
+  text-align: center;
 }
 
 .upload__button:not(:last-child) {
