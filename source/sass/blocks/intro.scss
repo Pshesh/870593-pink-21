@@ -5,8 +5,9 @@
   background-size: contain;
 }
 
-.intro--form {
-  background-image: url("../img/bg-phone.png");
+.intro--inner {
+  background-color: $bg-dark;
+  background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,6 +31,12 @@
 .intro__slogan--form {
   padding-top: 36px;
   padding-bottom: 51px;
+  line-height: 33px;
+}
+
+.intro__slogan--photos {
+  padding-top: 36px;
+  padding-bottom: 84px;
   line-height: 33px;
 }
 

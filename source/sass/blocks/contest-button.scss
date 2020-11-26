@@ -11,4 +11,6 @@
   text-transform: uppercase;
   color: $font-light;
   background-color: $contest-button;
+  border: 2px solid $contest-button;
+  border-radius: 2px;
 }

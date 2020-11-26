@@ -1,0 +1,42 @@
+.upload {
+  background-color: $bg-main;
+}
+
+.upload__slogan-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 49px;
+  padding-bottom: 52px;
+}
+
+.upload__slogan {
+  @include margin-padding-reset;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $font-medium;
+}
+
+.upload__section {
+  background-color: $bg-light;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.upload__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.upload__button-wrapper {
+  padding-top: 38px;
+  padding-bottom: 41px;
+  text-align: center;
+}
+
+.upload__button:not(:last-child) {
+  margin-bottom: 12px;
+}

@@ -28,6 +28,10 @@ $downloadbtn-hover: #d22856;
 $downloadbtn-down: transparentize($downloadbtn-hover, 0.7);
 $downloadbtn-bg: #ffffff;
 
+// UPLOAD BUTTON
+$submitbtn-color: #d22856;
+$resetbtn-color: transparentize(#283645, 0.9);
+
 // SLIDER
 $slider-active-bg: #ffffff;
 $slider-active-border: #283645;
