@@ -1,37 +1,45 @@
 .table {
-  display: inline-block;
-  border-spacing: 2px;
-}
+  border-collapse: collapse;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  min-width: 840px;
 
-.table__head {
-  background-color: $bg-light;
+  @media (min-width: $tablet) {
+    min-width: 622px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 945px;
+  }
 }
 
 .table__value {
+  width: 276px;
   background-color: $table-bg-dark;
-  min-width: 278px;
+  border: 2px solid $table-border;
   padding-top: 19px;
   padding-bottom: 35px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $font-light;
+
+  @media (min-width: $tablet) {
+    width: 155px;
+    padding-bottom: 16px;
+  }
 }
 
 .table__value-tarif {
   @include margin-padding-reset;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $font-light;
 }
 
 .table__value-price {
   @include margin-padding-reset;
   font-weight: 300;
   font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $font-light;
 }
 
 // span {
@@ -52,9 +60,74 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $font-medium;
-  min-width: 278px;
+  width: 276px;
+  border: 2px solid $table-border;
   background: $bg-main;
   padding-top: 24px;
   padding-bottom: 25px;
   padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 155px;
+    text-transform: none;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 15px;
+  }
+}
+
+.table__field span {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.table__value--empty {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: table-cell;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.table__field--empty {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: table-cell;
+  }
+}
+
+.table__field::before {
+  @media (min-width: $tablet) {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 102px;
+  }
+}
+
+.table__field--yes::before {
+  @media (min-width: $tablet) {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+  }
+}
+
+.table__field--no::before {
+  @media (min-width: $tablet) {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
+  }
 }

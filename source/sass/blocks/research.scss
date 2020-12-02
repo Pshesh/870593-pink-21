@@ -1,10 +1,48 @@
 .research {
   background-color: $bg-main;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $bg-light;
+  }
+
+  .research__link {
+    text-decoration-line: underline;
+  }
 }
 
 .research__wrapper {
   padding-top: 102px;
   padding-bottom: 128px;
+  margin-left: 311px;
+  position: relative;
+
+  @media (min-width: $desktop) {
+    padding-top: 115px;
+    padding-bottom: 120px;
+    margin-left: 380px;
+  }
+}
+
+.research__wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/timer.svg");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 276px;
+  left: -298px;
+  top: 54px;
+
+  @media (min-width: $desktop) {
+    width: 298px;
+    height: 345px;
+    left: -350px;
+  }
 }
 
 .research__title {
@@ -13,6 +51,10 @@
   font-size: 30px;
   line-height: 36px;
   color: $font-dark;
+
+  @media (min-width: $desktop) {
+    line-height: 30px;
+  }
 }
 
 .research__text {
@@ -22,6 +64,21 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-medium;
+
+  @media (min-width: $desktop) {
+    margin-top: 37px;
+    margin-bottom: 47px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.research__text br:nth-child(2) {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .research__link {
@@ -29,4 +86,9 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-optional;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

@@ -1,15 +1,21 @@
 .button {
+  display: block;
   border-radius: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
-  padding: 15px 35px;
-  width: 280px;
+  padding: 15px 25px;
+  min-width: 280px;
 }
 
 .button--download {
   color: $downloadbtn-color;
   border: 3px solid $downloadbtn-color;
+
+  @media (min-width: $desktop) {
+    font-size: 21px;
+    line-height: 18px;
+  }
 }
 
 .button--submit {

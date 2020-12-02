@@ -2,10 +2,31 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
 
-  p {
-    @include margin-padding-reset;
+  background-image: url("../img/grey-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 170px;
+
+  @media (min-width: $tablet) {
+    background-position: 0 145px;
+    min-height: 725px;
+  }
+
+  @media (min-width: $desktop) {
+    background-position: 0 150px;
+  }
+}
+
+.features__slogan-wrapper {
+  padding-top: 46px;
+
+  @media (min-width: $tablet) {
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 77px;
   }
 }
 
@@ -14,57 +35,148 @@
   font-size: 24px;
   line-height: 29px;
   color: $font-medium;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 54px;
+  }
 }
 
-.features__slogan-wrapper {
-  padding-top: 46px;
-  padding-left: 20px;
-  padding-right: 20px;
+.features__slogan-text {
+  @include margin-padding-reset;
+}
+
+.features__slogan-text:not(:last-child) {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .features__list {
   @include list-reset;
   @include margin-padding-reset;
-  background-image: url("../img/grey-background.png");
-  background-repeat: no-repeat;
-  background-position: top center;
+  position: relative;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .features__list-wrapper {
-  position: relative;
-  padding-top: 123px;
+  margin-top: 123px;
+
+  @media (min-width: $tablet) {
+    margin-left: 50%;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+    margin-left: 0;
+  }
 }
 
 .features__item {
+  text-align: center;
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+    width: 310px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+    width: 240px;
+    flex-direction: column-reverse;
+  }
 }
 
-.features__item-wrapper {
-  margin-bottom: 43px;
+.features__item::after {
+  content: "";
+  display: block;
+  width: 157px;
+  height: 277px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 268px;
+    height: 481px;
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    left: 15px;
+    width: 186px;
+    height: 260px;
+    margin-bottom: 40px;
+  }
 }
 
-.features__img {
-  display: inline-block;
+.features__item--mood::after {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    background-image: url("../img/iphone-screen-1.png");
+  }
+}
+
+.features__item--world::after {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    background-image: url("../img/iphone-screen-2.png");
+  }
+}
+
+.features__item--friends::after {
+  background-image: url("../img/iphone-screen-mobile.png");
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/iphone-screen-tablet.png");
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/iphone-screen-3.png");
+  }
 }
 
 .features__title {
   @include margin-padding-reset;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: $font-dark;
-  margin-bottom: 24px;
+
+  @media (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
 }
 
 .features__description {
+  @include margin-padding-reset;
+  margin-bottom: 36px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $font-medium;
-  text-align: center;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

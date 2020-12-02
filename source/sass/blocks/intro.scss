@@ -1,8 +1,20 @@
 .intro {
   background-color: $bg-dark;
-  background-image: url("../img/bg-phone.png");
+  background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  min-height: 733px;
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/back-tablet.png");
+    min-height: 729px;
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/back-desktop.png");
+    min-height: 853px;
+  }
 }
 
 .intro--inner {
@@ -13,10 +25,23 @@
 }
 
 .intro__wrapper {
-  padding-top: 29px;
-  padding-bottom: 38px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto;
+  padding-top: 90px;
+  min-height: inherit;
+
+  @media (min-width: $tablet) {
+    padding-top: 212px;
+    margin-left: 20px;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 130px;
+  }
+}
+
+.intro__slogan-wrapper {
+  text-align: center;
 }
 
 .intro__slogan {
@@ -26,6 +51,24 @@
   line-height: 29px;
   color: $font-light;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.intro__slogan-br:last-child {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
 }
 
 .intro__slogan--form {
@@ -40,10 +83,29 @@
   line-height: 33px;
 }
 
-.intro__download {
-  margin-top: 320px;
-  padding-top: 28px;
+.intro__download-wrapper {
   background-color: $bg-dark;
+  padding-top: 28px;
+  padding-bottom: 38px;
+  margin-top: 320px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+    width: auto;
+    padding-top: 0;
+    margin-top: 39px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 51px;
+  }
+}
+
+.intro__download {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 300px;
 }
 
 .intro__list-wrapper {
@@ -51,6 +113,16 @@
   margin-left: 38px;
   margin-right: 38px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    margin-top: 46px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 67px;
+    margin-bottom: 58px;
+  }
 }
 
 .intro__list {
@@ -68,4 +140,9 @@
   font-size: 14px;
   line-height: 24px;
   color: $font-light;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

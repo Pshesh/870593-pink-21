@@ -1,23 +1,52 @@
 .page-header {
-  // background-color: $bg-black;
+  width: 100%;
+  margin-bottom: -66px;
   background-color: $bg-medium;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // position: absolute;
-  // right: 0;
-  // left: 0;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin-bottom: -110px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 110px;
+    margin-bottom: 0;
+    background-color: $bg-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 130px;
+    position: absolute;
+  }
 }
 
-.page-header__wrapper {
-  padding-top: 23px;
-  // padding-bottom: 23px;
-  // padding-left: 20px;
-  // padding-right: 20px;
+.page-header__logo-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .page-header__logo {
   display: block;
-  padding-left: 20px;
-  padding-bottom: 20px;
 }
-// Закомментированые стили - делала состояние, когда меню закрыто
+
+.page-header__button {
+  @include margin-padding-reset;
+  @include button-reset;
+  background: transparent;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
