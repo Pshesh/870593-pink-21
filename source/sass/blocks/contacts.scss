@@ -99,3 +99,15 @@
     @include margin-padding-reset;
   }
 }
+
+.contacts__map {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 502px;
+  }
+}

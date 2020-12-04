@@ -18,4 +18,9 @@
 .page-footer__social {
   margin-top: 41px;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
