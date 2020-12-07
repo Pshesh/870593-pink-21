@@ -15,8 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 110px;
-    padding-right: 130px;
+    padding: 0 calc(50% - 470px);
     position: absolute;
   }
 }
@@ -34,6 +33,7 @@
 
   @media (min-width: $desktop) {
     display: block;
+    padding-left: 0;
   }
 }
 
