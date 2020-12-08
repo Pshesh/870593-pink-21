@@ -4,6 +4,10 @@
   justify-content: space-between;
   align-items: center;
   width: 59px;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .slider__toggle {

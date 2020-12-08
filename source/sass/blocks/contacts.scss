@@ -4,10 +4,26 @@
 
 .contacts__wrapper {
   padding-top: 50px;
+
+  @media (min-width: $tablet) {
+    padding-top: 55px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 74px;
+  }
 }
 
 .contacts__header {
   margin-bottom: 45px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 61px;
+  }
 }
 
 .contacts__slogan {
@@ -17,16 +33,48 @@
   line-height: 29px;
   text-align: center;
   color: $font-medium;
+
+  @media (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contacts__list {
   @include list-reset;
   @include margin-padding-reset;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .contacts__item {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+  }
+}
+
+.contacts__item:nth-child(2) {
+  @media (min-width: $desktop) {
+    order: 3;
+  }
+}
+
+.contacts__item:last-child {
+  @media (min-width: $desktop) {
+    order: 2;
+  }
 }
 
 .contacts__text {
@@ -35,6 +83,10 @@
   font-size: 18px;
   line-height: 25px;
   color: $font-medium;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 34px;
+  }
 }
 
 .contacts__info {
@@ -45,5 +97,17 @@
 
   &--adress {
     @include margin-padding-reset;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 502px;
   }
 }
