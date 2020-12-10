@@ -32,3 +32,9 @@
     padding: 0;
   }
 }
+
+.contest .wrapper-center {
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
