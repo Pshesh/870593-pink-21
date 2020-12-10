@@ -1,23 +1,95 @@
-.contest-form__wrapper {
+.contest-form {
   padding-top: 54px;
   padding-bottom: 26px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 437px 437px;
+    grid-column-gap: 70px;
+    grid-row-gap: 50px;
+  }
+}
+
+.contest-form .fieldset {
+  @media (max-width: $mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.contest-form .fieldset:not(:last-child) {
+  @media (min-width: $tablet) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .contest-form__header {
   @include margin-padding-reset;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  width: 320px;
   text-align: center;
   color: $font-medium;
+
+  @media (min-width: $tablet) {
+    order: 1;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 18px;
+    width: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 800px;
+    grid-column: 1/-1;
+  }
+}
+
+.contest-form__header span {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
 }
 
 .contest-form__submit {
   text-align: center;
+
+  @media (min-width: $tablet) {
+    order: 7;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/-1;
+  }
 }
 
 .contest-form__button {
   margin-bottom: 44px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .contest-form__notice {
@@ -27,8 +99,16 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $font-medium;
+}
 
-  span {
-    color: $font-optional;
+.contest-form__notice-star {
+  color: $font-optional;
+}
+
+.contest-form__notice-text {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
   }
 }
