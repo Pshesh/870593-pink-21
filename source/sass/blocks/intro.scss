@@ -59,10 +59,11 @@
 .intro__slogan-wrapper {
   width: 300px;
   margin: 0 auto;
-  padding-top: 90px;
 }
 
 .intro--inner .intro__slogan-wrapper {
+  padding-top: 90px;
+
   @media (min-width: $tablet) {
     width: 600px;
     padding-top: 170px;
@@ -100,19 +101,13 @@
   }
 }
 
-.intro__slogan--form {
+.intro__slogan--inner {
   line-height: 33px;
 
   @media (min-width: $tablet) {
     font-size: 50px;
     line-height: 68px;
   }
-}
-
-.intro__slogan--photos {
-  padding-top: 36px;
-  padding-bottom: 84px;
-  line-height: 33px;
 }
 
 .intro__download-wrapper {

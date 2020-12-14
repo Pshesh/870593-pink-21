@@ -3,10 +3,18 @@
 }
 
 .upload__slogan-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 49px;
   padding-bottom: 52px;
+
+  @media (min-width: $tablet) {
+    padding-top: 73px;
+    padding-bottom: 78px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 67px;
+    padding-bottom: 75px;
+  }
 }
 
 .upload__slogan {
@@ -16,27 +24,97 @@
   line-height: 30px;
   text-align: center;
   color: $font-medium;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .upload__section {
   background-color: $bg-light;
+  padding-top: 20px;
+  padding-bottom: 41px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 57px;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin: 0 calc(50% - 470px);
+  }
+}
+
+.upload__section-grid {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 275px;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 410px;
+    grid-column-gap: 90px;
+  }
 }
 
 .upload__photo {
   display: block;
   width: 100%;
   height: auto;
+
+  @media (min-width: $tablet) {
+    grid-row: 1/-1;
+  }
+}
+
+.upload__tools {
+  @media (min-width: $tablet) {
+    grid-row: 1/2;
+  }
 }
 
 .upload__button-wrapper {
-  padding-top: 38px;
-  padding-bottom: 41px;
-  text-align: center;
+  @media (min-width: $tablet) {
+    padding-top: 67px;
+    grid-column: 2/-1;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.upload__button {
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    min-width: 260px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 183px;
+  }
 }
 
 .upload__button:not(:last-child) {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }

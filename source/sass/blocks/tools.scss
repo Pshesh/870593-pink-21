@@ -1,3 +1,163 @@
 .tools {
-  padding-top: 42px;
+  margin-top: 42px;
+  margin-bottom: 38px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.tools__wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media (min-width: $tablet) {
+    padding-left: 5px;
+    padding-right: 20px;
+    border-bottom: 1px solid $scale-border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    padding-right: 29px;
+  }
+}
+
+.tools__wrapper:last-child {
+  @media (min-width: $desktop) {
+    border-bottom: none;
+  }
+}
+
+.tools__wrapper--crop {
+  border-bottom: 1px solid $scale-border;
+}
+
+.tools__img--crop {
+  margin-left: 20px;
+
+  @media (min-width: $tablet) {
+    margin-left: 0;
+  }
+}
+
+.tools__img--color {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet) {
+    position: initial;
+    opacity: unset;
+  }
+}
+
+.tools__img--light {
+  position: absolute;
+  top: 7px;
+  left: 225px;
+  opacity: 0.3;
+
+  @media (min-width: $tablet) {
+    position: initial;
+    opacity: unset;
+  }
+}
+
+.tools__img-svg path {
+  @media (min-width: $tablet) {
+    fill: $svg-color;
+  }
+}
+
+.tools__img-svg--crop {
+  @media (min-width: $tablet) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.tools__img-svg--color {
+  @media (min-width: $tablet) {
+    width: 24px;
+    height: 22px;
+  }
+}
+
+.tools__img-svg--light {
+  @media (min-width: $tablet) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.tools__scale {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 33px;
+  }
+}
+
+.tools__scale--color {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.tools__scale--light {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.tools__bar {
+  height: 2px;
+  background-color: $bg-medium;
+}
+
+.tools__toggle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $toggle-border;
+  border-radius: 50%;
+  background-color: $bg-main;
+  cursor: pointer;
+  top: 24px;
+
+  @media (min-width: $desktop) {
+    top: 27px;
+  }
+}
+
+.tools__toggle--crop {
+  right: 40px;
+}
+
+.tools__toggle--color {
+  left: 40px;
+}
+
+.tools__toggle--light {
+  right: 50%;
 }
