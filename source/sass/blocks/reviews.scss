@@ -126,6 +126,20 @@
   }
 }
 
+.reviews__button:hover::before,
+.reviews__button:hover::after {
+  @media (min-width: $desktop) {
+    background-color: transparentize($bg-medium, 0.6);
+  }
+}
+
+.reviews__button:active::before,
+.reviews__button:active::after {
+  @media (min-width: $desktop) {
+    background-color: transparentize($bg-medium, 0.9);
+  }
+}
+
 .reviews__button::before {
   @media (min-width: $desktop) {
     top: 11px;
