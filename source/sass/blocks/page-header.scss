@@ -20,6 +20,16 @@
   }
 }
 
+.page-header--closed {
+  background-color: $bg-black;
+  margin-bottom: 0;
+  position: absolute;
+
+  .page-header__logo-wrapper {
+    border-bottom: none;
+  }
+}
+
 .page-header__logo-wrapper {
   padding: 20px;
   padding-bottom: 15px;

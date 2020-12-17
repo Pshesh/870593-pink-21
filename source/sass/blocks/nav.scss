@@ -90,7 +90,6 @@
   }
 }
 
-
 .nav__list {
   @include list-reset;
   @include margin-padding-reset;
@@ -119,17 +118,19 @@
 }
 
 .nav__item--current {
-  position: relative;
+  @media (min-width: $desktop) {
+    position: relative;
 
-  &::after {
-    position: absolute;
-    content: "";
-    display: block;
-    right: 0;
-    bottom: 6px;
-    left: 0;
-    height: 2px;
-    background: $nav-color;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      right: 0;
+      bottom: 6px;
+      left: 0;
+      height: 2px;
+      background: $nav-color;
+    }
   }
 }
 
