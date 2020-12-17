@@ -3,6 +3,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover path {
+    fill: $html-logo-hover;
+  }
+
+  &:active path {
+    fill: $html-logo-down;
+  }
+
+  @media (min-width: $desktop) {
+    width: 153px;
+    margin-top: 11px;
+  }
 }
 
 .copyright__text {
@@ -11,6 +24,14 @@
   font-size: 14px;
   line-height: 18px;
   color: $font-medium;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 
 .copyright__logo path {

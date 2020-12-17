@@ -3,8 +3,13 @@
 }
 
 .reviews__wrapper {
-  padding-top: 50px;
   position: relative;
+  padding-top: 94px;
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    padding-top: 63px;
+  }
 }
 
 .reviews__list {
@@ -35,7 +40,12 @@
   color: $font-dark;
 
   @media (min-width: $tablet) {
-    margin-top: 51px;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
   }
 }
 
@@ -48,11 +58,16 @@
   @media (min-width: $tablet) {
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    margin-top: 3px;
+  }
 }
 
 .reviews__text {
   @include margin-padding-reset;
-  margin-top: 31px;
+  margin-top: 13px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -80,7 +95,7 @@
     height: 63px;
     position: absolute;
     top: -110px;
-    left: 300px;
+    left: 306px;
   }
 }
 
@@ -91,12 +106,66 @@
   @media (min-width: $desktop) {
     display: block;
     position: absolute;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    top: 212px;
+  }
+}
+
+.reviews__button::before,
+.reviews__button::after {
+  @media (min-width: $desktop) {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 29px;
+    height: 2px;
+    background-color: transparentize($bg-medium, 0.7);
+  }
+}
+
+.reviews__button::before {
+  @media (min-width: $desktop) {
+    top: 11px;
+    left: -3px;
+  }
+}
+
+.reviews__button::after {
+  @media (min-width: $desktop) {
+    top: 31px;
+    left: -3px;
+  }
+}
+
+.reviews__button--prev::before,
+.reviews__button--next::after {
+  @media (min-width: $desktop) {
+    transform: rotate(-45deg);
+  }
+}
+
+.reviews__button--prev::after,
+.reviews__button--next::before {
+  @media (min-width: $desktop) {
+    transform: rotate(45deg);
+  }
+}
+
+.reviews__button--next {
+  @media (min-width: $desktop) {
+    right: 0;
   }
 }
 
 .reviews__toggles {
   margin: 0 auto;
-  margin-top: 44px;
+  margin-top: 32px;
+
+  @media (min-width: $tablet) {
+    margin-top: 36px;
+  }
 
   @media (min-width: $desktop) {
     margin-top: 51px;

@@ -1,3 +1,96 @@
+.nav {
+  @media (min-width: $desktop) {
+    padding-left: 153px;
+    flex-grow: 1;
+  }
+}
+
+.nav__button {
+  @include margin-padding-reset;
+  @include button-reset;
+  position: absolute;
+  width: 50px;
+  height: 24px;
+  top: 19px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    top: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav--nojs .nav__button {
+  display: none;
+}
+
+.nav--closed .nav__button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $bg-main;
+  box-shadow: 0 9px 0 0 $bg-main, 0 18px 0 0 $bg-main;
+}
+
+.nav--closed .nav__button:hover::before {
+  background-color: $navbtn-hover;
+  box-shadow: 0 9px 0 0 $navbtn-hover, 0 18px 0 0 $navbtn-hover;
+}
+
+.nav--closed .nav__button:active::before {
+  background-color: $navbtn-down;
+  box-shadow: 0 9px 0 0 $navbtn-down, 0 18px 0 0 $navbtn-down;
+}
+
+.nav--closed .nav__list {
+  display: none;
+}
+
+.nav--opened .nav__button {
+  width: 23px;
+  height: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: -3px;
+    width: 29px;
+    height: 3px;
+    background-color: $bg-main;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $navbtn-hover;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: $navbtn-down;
+  }
+}
+
+
 .nav__list {
   @include list-reset;
   @include margin-padding-reset;
@@ -15,10 +108,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 63px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-  border-bottom: 1px solid black;
+  border-top: 1px solid transparentize($nav-border, 0.85);
+  border-bottom: 1px solid $nav-border;
 
   @media (min-width: $desktop) {
+    padding-top: 20px;
     border-top: none;
     border-bottom: none;
   }
@@ -35,5 +129,13 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+  }
+
+  &:hover {
+    color: $nav-hover;
+  }
+
+  &:active {
+    color: $nav-down;
   }
 }

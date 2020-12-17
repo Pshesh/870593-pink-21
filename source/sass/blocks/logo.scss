@@ -1,8 +1,25 @@
 .logo {
   width: 145px;
+  margin-bottom: 7px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 14px;
+  }
+}
+
+.logo:hover path {
+  fill: $plf-text-hover;
 }
 
 .logo__txt path {
