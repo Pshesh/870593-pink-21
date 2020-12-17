@@ -101,6 +101,7 @@
 
 .reviews__button {
   @include button-reset;
+  cursor: pointer;
   display: none;
 
   @media (min-width: $desktop) {
