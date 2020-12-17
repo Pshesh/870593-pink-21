@@ -54,6 +54,10 @@
 
 .nav--closed .nav__list {
   display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .nav--opened .nav__button {
