@@ -53,7 +53,9 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 29px;
+    padding-left: 47px;
   }
 
   @media (min-width: $desktop) {
@@ -88,10 +90,12 @@
 .contacts__item:last-child {
   @media (min-width: $tablet) {
     margin-bottom: 0;
+    margin-left: 158px;
   }
 
   @media (min-width: $desktop) {
     order: 2;
+    margin-left: 0;
   }
 }
 

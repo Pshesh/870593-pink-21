@@ -1,6 +1,6 @@
 .nav {
   @media (min-width: $desktop) {
-    padding-left: 153px;
+    padding-left: 143px;
     flex-grow: 1;
   }
 }
@@ -19,6 +19,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet) {
+    right: 30px;
     top: 40px;
   }
 
