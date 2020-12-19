@@ -3,13 +3,13 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 31px;
-  padding-bottom: 36px;
+  padding-top: 51px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 275px;
+  min-height: 284px;
 
   @media (min-width: $tablet) {
     padding-top: 0;

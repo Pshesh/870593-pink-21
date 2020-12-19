@@ -4,12 +4,8 @@
 
 .reviews__wrapper {
   position: relative;
-  padding-top: 41px;
+  padding-top: 94px;
   padding-bottom: 20px;
-
-  @media (min-width: $tablet) {
-    padding-top: 94px;
-  }
 
   @media (min-width: $desktop) {
     padding-top: 63px;

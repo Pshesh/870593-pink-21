@@ -32,7 +32,6 @@
 
 .page-header__logo-wrapper {
   padding: 20px;
-  padding-top: 23px;
   padding-bottom: 15px;
   border-bottom: 1px solid $nav-border;
   display: flex;
@@ -40,7 +39,6 @@
   align-items: center;
 
   @media (min-width: $tablet) {
-    padding: 30px;
     padding-top: 27px;
     padding-bottom: 35px;
   }
