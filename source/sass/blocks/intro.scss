@@ -163,8 +163,12 @@
   @include list-reset;
   @include margin-padding-reset;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    align-items: center;
+  }
 
   @media (min-width: $desktop) {
     align-items: flex-end;
