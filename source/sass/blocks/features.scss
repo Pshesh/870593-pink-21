@@ -121,10 +121,6 @@
     bottom: 0;
   }
 
-  @media (min-width: 653px) {
-    bottom: -8px;
-  }
-
   @media (min-width: $desktop) {
     position: relative;
     left: 0;
@@ -216,5 +212,11 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 0;
+  }
+}
+
+.features__description:last-child {
+  @media (min-width: $tablet) {
+    margin-bottom: 43px;
   }
 }
