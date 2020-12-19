@@ -43,6 +43,9 @@
   margin: 0 auto;
   padding-top: 90px;
   min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @media (min-width: $tablet) {
     padding-top: 203px;
@@ -113,9 +116,8 @@
 
 .intro__download-wrapper {
   background-color: $bg-dark;
-  padding-top: 29px;
-  padding-bottom: 26px;
-  margin-top: 314px;
+  padding-top: 28px;
+  padding-bottom: 32px;
   min-width: 300px;
 
   @media (min-width: $tablet) {
