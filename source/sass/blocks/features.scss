@@ -118,7 +118,11 @@
     height: 481px;
     position: absolute;
     left: -100%;
-    top: -80px;
+    bottom: 0;
+  }
+
+  @media (min-width: 653px) {
+    bottom: -8px;
   }
 
   @media (min-width: $desktop) {
