@@ -19,6 +19,12 @@
 .user-info__list {
   @include list-reset;
   @include margin-padding-reset;
+  margin: 0 auto;
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .user-info__item {

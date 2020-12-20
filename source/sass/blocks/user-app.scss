@@ -53,6 +53,12 @@
 .user-app__list {
   @include list-reset;
   @include margin-padding-reset;
+  margin: 0 auto;
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .user-app__item:not(:last-child) {
@@ -111,7 +117,7 @@
   content: "";
   position: absolute;
   left: 13px;
-  top: 5px;
+  top: 6px;
   width: 15px;
   height: 15px;
   background-color: $font-optional;

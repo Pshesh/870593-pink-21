@@ -41,6 +41,12 @@
 .user-contacts__list {
   @include list-reset;
   @include margin-padding-reset;
+  margin: 0 auto;
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop) {
     display: grid;
@@ -88,7 +94,7 @@
 .user-contacts__label::before {
   @media (min-width: $tablet) {
     position: absolute;
-    top: -72px;
+    top: -71px;
     right: 1px;
     width: 60px;
     height: 60px;
