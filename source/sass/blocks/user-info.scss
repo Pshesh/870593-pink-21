@@ -63,6 +63,15 @@
   width: 100%;
   border: 2px solid $form-border;
   border-radius: 2px;
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $input-border-active;
+  }
 }
 
 .user-info__input::placeholder {

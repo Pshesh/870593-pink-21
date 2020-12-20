@@ -56,7 +56,7 @@
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 56px;
+    grid-column-gap: 37px;
   }
 }
 
@@ -104,12 +104,62 @@
   font-size: 18px;
   line-height: 30px;
   color: $font-medium;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding-left: 117px;
   }
 
   @media (min-width: $desktop) {
-    padding-left: 0;
+    padding-left: 45px;
   }
+}
+
+.user-achieves__label::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-color: $bg-main;
+  border: 2px solid $form-border;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+
+  @media (min-width: $tablet) {
+    left: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 0;
+  }
+}
+
+.user-achieves__label:hover::before {
+  border-color: $input-border-hover;
+  cursor: pointer;
+}
+
+.user-achieves__label:active::before {
+  outline: none;
+  border-color: $input-border-active;
+  cursor: pointer;
+}
+
+.user-achieves__input:checked + .user-achieves__label::after {
+  content: url("../img/tick.svg");
+  position: absolute;
+  left: 7px;
+  top: 1px;
+
+  @media (min-width: $tablet) {
+    left: 67px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 7px;
+  }
+}
+
+.user-achieves__label:hover::after {
+  cursor: pointer;
 }

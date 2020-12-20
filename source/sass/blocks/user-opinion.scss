@@ -61,6 +61,15 @@
   border: 2px solid $form-border;
   border-radius: 2px;
   resize: none;
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $input-border-active;
+  }
 }
 
 .user-opinion__text::placeholder {

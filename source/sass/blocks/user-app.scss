@@ -61,6 +61,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $font-medium;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding-left: 119px;
@@ -68,5 +69,55 @@
 
   @media (min-width: $desktop) {
     padding-left: 133px;
+  }
+}
+
+.user-app__label::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: $bg-main;
+  border: 2px solid $form-border;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -6px;
+
+  @media (min-width: $tablet) {
+    left: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 74px;
+  }
+}
+
+.user-app__label:hover::before {
+  border-color: $input-border-hover;
+  cursor: pointer;
+}
+
+.user-app__label:active::before {
+  outline: none;
+  border-color: $input-border-active;
+  cursor: pointer;
+}
+
+.user-app__input:checked + .user-app__label::after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: $font-optional;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    left: 71px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 85px;
   }
 }

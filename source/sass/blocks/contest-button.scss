@@ -17,4 +17,17 @@
   @media (min-width: $tablet) {
     width: 300px;
   }
+
+  &:hover {
+    background-color: $contest-button-hover;
+    border-color: $contest-button-hover;
+  }
+
+  &:active {
+    color: transparentize($font-light, 0.7);
+  }
+
+  &:disabled {
+    background-color: $contest-button-disabled;
+  }
 }

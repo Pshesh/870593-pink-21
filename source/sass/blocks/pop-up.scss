@@ -1,9 +1,21 @@
 .pop-up {
-  background-color: $bg-main;
-  // temporary
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
   display: none;
+  background-color: $bg-main;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  @media (min-width: $tablet) {
+    width: 460px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 780px;
+  }
 }
 
 .pop-up--failure .pop-up__wrapper {
@@ -12,13 +24,27 @@
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding-top: 49px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 52px;
+  }
 }
 
 .pop-up--succes .pop-up__wrapper {
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 44px;
   padding-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    padding-top: 49px;
+    padding-bottom: 52px;
+  }
 }
 
 .pop-up__header {
@@ -26,8 +52,26 @@
   margin-bottom: 37px;
   font-weight: bold;
   font-size: 18px;
+  line-height: 24px;
   text-align: center;
   color: $font-dark;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.pop-up__header br {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .pop-up__text {
@@ -37,6 +81,63 @@
   line-height: 24px;
   text-align: center;
   color: $font-medium;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+.pop-up__text--failure br {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.pop-up__text--failure br:nth-child(2) {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
+}
+
+.pop-up__text--succes br:first-child,
+.pop-up__text--succes br:nth-child(2),
+.pop-up__text--succes br:nth-child(3),
+.pop-up__text--succes br:nth-child(4),
+.pop-up__text--succes br:nth-child(5) {
+  display: none;
+}
+
+.pop-up__text--succes br:nth-child(2),
+.pop-up__text--succes br:nth-child(4),
+.pop-up__text--succes br:last-child {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.pop-up__text--succes br:first-child,
+.pop-up__text--succes br:nth-child(3),
+.pop-up__text--succes br:nth-child(5) {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.pop-up__text--succes br:nth-child(2),
+.pop-up__text--succes br:nth-child(4) {
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
 
 .pop-up__button-wrapper {
@@ -46,6 +147,18 @@
   padding-right: 20px;
   background-color: $bg-light;
   text-align: center;
+}
+
+.pop-up__button {
+  @media (min-width: $tablet) {
+    width: 296px;
+  }
+}
+
+.pop-up--succes .pop-up__button {
+  @media (min-width: $desktop) {
+    width: 456px;
+  }
 }
 
 .pop-up--failure .pop-up__button {
