@@ -13,12 +13,35 @@
   }
 }
 
+.table__row {
+  height: 99px;
+
+  @media (min-width: $tablet) {
+    height: 81px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 100px;
+  }
+}
+
+.table__row-body {
+  height: 60px;
+
+  @media (min-width: $tablet) {
+    height: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 59px;
+  }
+}
+
 .table__value {
   width: 276px;
   background-color: $table-bg-dark;
   border: 2px solid $table-border;
-  padding-top: 19px;
-  padding-bottom: 35px;
+  padding-bottom: 15px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
@@ -26,61 +49,40 @@
 
   @media (min-width: $tablet) {
     width: 155px;
-    padding-bottom: 16px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 6px;
   }
 }
 
-.table__value-tarif {
-  @include margin-padding-reset;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.table__value-price {
-  @include margin-padding-reset;
-  font-weight: 300;
-  font-size: 18px;
-}
-
-// span {
-//   display: block;
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 30px;
-//   text-align: center;
-//   color: $font-light;
-//   text-transform: uppercase;
-//   background-color: $bg-optional;
-//   transform: rotate(-45deg);
-// }
-
-.table__field {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $font-medium;
-  width: 276px;
-  border: 2px solid $table-border;
-  background: $bg-main;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+.table__value--hit {
   position: relative;
-
-  @media (min-width: $tablet) {
-    width: 155px;
-    text-transform: none;
-    padding-top: 18px;
-    padding-bottom: 17px;
-    padding-left: 15px;
-  }
+  overflow: hidden;
 }
 
-.table__field span {
+.table__value--hit::before {
+  content: "";
+  width: 74px;
+  height: 74px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/Table-hit.svg");
+  background-repeat: no-repeat;
+
   @media (min-width: $tablet) {
-    display: none;
+    width: 61px;
+    height: 61px;
+    left: -4px;
+    background-image: url("../img/Table-hit-tablet.svg");
+  }
+
+  @media (min-width: $desktop) {
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/Table-hit.svg");
   }
 }
 
@@ -94,6 +96,58 @@
   }
 }
 
+.table__value-tarif {
+  @include margin-padding-reset;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
+}
+
+.table__value-price {
+  @include margin-padding-reset;
+  font-weight: 300;
+  font-size: 18px;
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
+}
+
+.table__field {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $font-medium;
+  width: 276px;
+  border: 2px solid $table-border;
+  background: $bg-main;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 155px;
+    text-transform: none;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    padding-left: 23px;
+    padding-right: 9px;
+  }
+}
+
+.table__field span {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .table__field--empty {
   display: none;
 
@@ -103,31 +157,31 @@
 }
 
 .table__field::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+
   @media (min-width: $tablet) {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 60px;
+    top: 9px;
+    left: 63px;
   }
 
   @media (min-width: $desktop) {
+    top: 18px;
     left: 102px;
   }
 }
 
 .table__field--yes::before {
-  @media (min-width: $tablet) {
-    width: 31px;
-    height: 21px;
-    background-image: url("../img/yes.svg");
-  }
+  width: 31px;
+  height: 21px;
+  background-image: url("../img/yes.svg");
 }
 
 .table__field--no::before {
-  @media (min-width: $tablet) {
-    width: 27px;
-    height: 27px;
-    background-image: url("../img/no.svg");
-  }
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/no.svg");
 }
