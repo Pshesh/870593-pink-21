@@ -17,6 +17,7 @@ $font-optional: #d22856;
 $nav-color: #ffffff;
 $nav-hover: #d22856;
 $nav-down: transparentize($nav-hover, 0.7);
+$nav-border: #000000;
 
 // NAVIGATION BUTTON
 $navbtn-color: #ffffff;
@@ -27,11 +28,15 @@ $navbtn-down: transparentize($navbtn-hover, 0.7);
 $downloadbtn-color: #ffffff;
 $downloadbtn-hover: #d22856;
 $downloadbtn-down: transparentize($downloadbtn-hover, 0.7);
-$downloadbtn-bg: #ffffff;
 
 // UPLOAD BUTTON
 $submitbtn-color: #d22856;
 $resetbtn-color: transparentize(#283645, 0.9);
+
+// RESEARCH
+$research-color: #d22856;
+$research-hover: #283645;
+$research-down: transparentize($research-hover, 0.7);
 
 // SLIDER
 $slider-active-bg: #ffffff;
@@ -40,20 +45,10 @@ $slider-bullet: transparentize($slider-active-border, 0.7);
 $slider-hover: transparentize($slider-active-border, 0.4);
 $slider-down: transparentize($slider-active-border, 0.9);
 
-// PHONE LINK
-$phone-color: #d22856;
-$phone-hover: #283645;
-$phone-down: transparentize($phone-hover, 0.7);
-
-// MAIL LINK
-$mail-color: #d22856;
-$mail-hover: #283645;
-$mail-down: transparentize($mail-hover, 0.7);
-
-// ADDRESS LINK
-$address-color: #d22856;
-$address-hover: #283645;
-$address-down: transparentize($address-hover, 0.7);
+// CONTACTS
+$contacts-color: #d22856;
+$contacts-hover: #283645;
+$contacts-down: transparentize($contacts-hover, 0.7);
 
 // PINK LOGO HEADER
 $plh-color: #ffffff;
@@ -66,12 +61,6 @@ $plf-img-down: transparentize($plf-img-color, 0.7);
 $plf-text-color: #283645;
 $plf-text-hover: #d22856;
 $plf-text-down: transparentize($plf-text-color, 0.7);
-
-// SOCIALS
-$social-border: transparentize(#283645, 0.9);
-$social-border-hover: #283645;
-$social-color: #d22856;
-$social-down: transparentize($social-color, 0.7);
 
 // HTML LOGO
 $html-logo-color: #d22856;

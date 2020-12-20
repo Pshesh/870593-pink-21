@@ -2,31 +2,35 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  overflow: hidden;
 
   background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 170px;
+  background-position: 0 160px;
 
   @media (min-width: $tablet) {
-    background-position: 0 160px;
+    background-position: 0 153px;
     min-height: 725px;
   }
 
   @media (min-width: $desktop) {
-    background-position: 0 103px;
+    background-position: 0 156px;
   }
 }
 
 .features__slogan-wrapper {
-  padding-top: 46px;
+  padding-top: 41px;
+  padding-bottom: 60px;
 
   @media (min-width: $tablet) {
-    padding-top: 58px;
+    padding-top: 46px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 77px;
+    padding-top: 62px;
+    margin-bottom: 32px;
   }
 }
 
@@ -41,6 +45,11 @@
     font-size: 40px;
     line-height: 54px;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .features__slogan-text {
@@ -48,7 +57,7 @@
 }
 
 .features__slogan-text:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -68,14 +77,15 @@
 }
 
 .features__list-wrapper {
-  margin-top: 123px;
+  margin-top: 53px;
 
   @media (min-width: $tablet) {
+    margin-top: 36px;
     margin-left: 50%;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 50px;
+    margin-top: 0;
     margin-left: 0;
   }
 }
@@ -87,7 +97,6 @@
 
   @media (min-width: $tablet) {
     text-align: left;
-    width: 310px;
   }
 
   @media (min-width: $desktop) {
@@ -103,22 +112,41 @@
   width: 157px;
   height: 277px;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 10px auto 0;
 
   @media (min-width: $tablet) {
     width: 268px;
     height: 481px;
     position: absolute;
     left: -100%;
-    bottom: 0;
+    bottom: -15px;
   }
 
   @media (min-width: $desktop) {
     position: relative;
-    left: 15px;
+    left: 0;
+    top: -55px;
     width: 186px;
-    height: 260px;
-    margin-bottom: 40px;
+    height: 301px;
+  }
+}
+
+.features__item--world {
+  @media (min-width: $desktop) {
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+}
+
+.features__item--world br {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
   }
 }
 
@@ -137,6 +165,8 @@
   @media (min-width: $desktop) {
     display: block;
     background-image: url("../img/iphone-screen-2.png");
+    margin-left: 21px;
+    margin-right: 21px;
   }
 }
 
@@ -154,7 +184,7 @@
 
 .features__title {
   @include margin-padding-reset;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -163,20 +193,25 @@
   @media (min-width: $desktop) {
     font-size: 30px;
     line-height: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 23px;
   }
 }
 
 .features__description {
   @include margin-padding-reset;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: $font-medium;
 
+  @media (min-width: $tablet) {
+    margin-bottom: 35px;
+  }
+
   @media (min-width: $desktop) {
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 0;
   }
 }

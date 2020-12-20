@@ -13,15 +13,23 @@
 .slider__toggle {
   @include button-reset;
   @include margin-padding-reset;
+  box-sizing: initial;
   width: 6px;
   height: 6px;
   background-color: $slider-bullet;
   border-radius: 50%;
+  cursor: pointer;
 
   &--current {
-    width: 9px;
-    height: 9px;
     background-color: $slider-active-bg;
     border: 3px solid $slider-active-border;
+  }
+
+  &:hover {
+    background-color: $slider-hover;
+  }
+
+  &:active {
+    background-color: $slider-down;
   }
 }

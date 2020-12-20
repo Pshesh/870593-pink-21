@@ -1,14 +1,39 @@
+.social {
+  @media (min-width: $tablet) {
+    margin-right: 16px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 10px;
+    margin-right: -9px;
+    margin-bottom: 0;
+  }
+}
+
 .social__list {
   @include list-reset;
   @include margin-padding-reset;
-  width: 172px;
+  width: 179px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $desktop) {
+    width: 170px;
+  }
 }
 
 .social__link {
   position: relative;
+
+  &:hover .social__circle {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__img {
@@ -16,7 +41,7 @@
 }
 
 .social__img--twitter {
-  top: -18px;
+  top: -19px;
   left: 18px;
 }
 
@@ -27,5 +52,5 @@
 
 .social__img--youtube {
   top: -18px;
-  left: 23px;
+  left: 21px;
 }

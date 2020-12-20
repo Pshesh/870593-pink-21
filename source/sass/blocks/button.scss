@@ -16,6 +16,16 @@
     font-size: 21px;
     line-height: 18px;
   }
+
+  &:hover {
+    color: $downloadbtn-hover;
+    background-color: $downloadbtn-color;
+  }
+
+  &:active {
+    color: $downloadbtn-down;
+    background-color: $downloadbtn-color;
+  }
 }
 
 .button--submit {
