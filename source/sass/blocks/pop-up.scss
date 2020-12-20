@@ -18,38 +18,47 @@
   }
 }
 
+.pop-up--succes {
+  min-height: 380px;
+}
+
 .pop-up--failure .pop-up__wrapper {
   padding-top: 44px;
-  padding-bottom: 50px;
+  padding-bottom: 44px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 
   @media (min-width: $tablet) {
     padding-top: 49px;
-    padding-bottom: 54px;
+    padding-bottom: 34px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 52px;
+    padding-bottom: 62px;
   }
 }
 
 .pop-up--succes .pop-up__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 44px;
-  padding-bottom: 41px;
+  padding-top: 45px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet) {
+    padding-top: 46px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
     padding-top: 49px;
-    padding-bottom: 52px;
+    padding-bottom: 37px;
   }
 }
 
 .pop-up__header {
   @include margin-padding-reset;
-  margin-bottom: 37px;
+  margin-bottom: 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -59,6 +68,7 @@
   @media (min-width: $tablet) {
     font-size: 30px;
     line-height: 40px;
+    margin-bottom: 22px;
   }
 }
 
@@ -117,18 +127,22 @@
   display: none;
 }
 
-.pop-up__text--succes br:nth-child(2),
-.pop-up__text--succes br:nth-child(4),
-.pop-up__text--succes br:last-child {
+.pop-up__text--succes br:first-child,
+.pop-up__text--succes br:nth-child(3),
+.pop-up__text--succes br:nth-child(5) {
   @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
     display: none;
   }
 }
 
-.pop-up__text--succes br:first-child,
-.pop-up__text--succes br:nth-child(3),
-.pop-up__text--succes br:nth-child(5) {
-  @media (min-width: $desktop) {
+.pop-up__text--succes br:nth-child(2),
+.pop-up__text--succes br:nth-child(4),
+.pop-up__text--succes br:last-child {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -149,6 +163,16 @@
   text-align: center;
 }
 
+.pop-up--failure .pop-up__button-wrapper {
+  padding-top: 0;
+  background-color: $bg-main;
+
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+    background-color: $bg-light;
+  }
+}
+
 .pop-up__button {
   @media (min-width: $tablet) {
     width: 296px;
@@ -159,8 +183,4 @@
   @media (min-width: $desktop) {
     width: 456px;
   }
-}
-
-.pop-up--failure .pop-up__button {
-  margin-top: 44px;
 }

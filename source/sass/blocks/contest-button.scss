@@ -1,10 +1,10 @@
 .contest-button {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   padding-left: 45px;
   padding-right: 45px;
 
-  width: 278px;
+  width: 280px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -16,6 +16,7 @@
 
   @media (min-width: $tablet) {
     width: 300px;
+    padding-bottom: 13px;
   }
 
   &:hover {

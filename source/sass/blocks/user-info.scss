@@ -1,18 +1,18 @@
 .user-info {
   @include margin-padding-reset;
-  padding-top: 45px;
-  padding-bottom: 44px;
+  padding-top: 35px;
+  padding-bottom: 43px;
   border: none;
   background-color: $bg-main;
 
   @media (min-width: $tablet) {
     order: 2;
-    padding-top: 80px;
+    padding-top: 67px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 10px;
+    padding-top: 30px;
   }
 }
 
@@ -29,10 +29,14 @@
 }
 
 .user-info__item:not(:last-child) {
-  margin-bottom: 27px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 47px;
+  }
 
   @media (min-width: $desktop) {
-    margin-bottom: 62px;
+    margin-bottom: 49px;
   }
 }
 
@@ -46,7 +50,7 @@
 
   @media (min-width: $tablet) {
     padding-left: 0;
-    margin-right: 20px;
+    margin-right: 18px;
   }
 }
 
@@ -59,7 +63,7 @@
   padding-bottom: 14px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 100%;
   border: 2px solid $form-border;
   border-radius: 2px;
@@ -71,6 +75,10 @@
   &:focus {
     outline: none;
     border-color: $input-border-active;
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 15px;
   }
 }
 

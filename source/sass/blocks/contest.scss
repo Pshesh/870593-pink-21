@@ -1,18 +1,18 @@
 .contest-form {
-  padding-top: 54px;
-  padding-bottom: 26px;
+  padding-top: 44px;
+  padding-bottom: 23px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet) {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 91px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop) {
     padding-bottom: 0;
     display: grid;
-    grid-template-columns: 437px 437px;
+    grid-template-columns: 435px 435px;
     grid-column-gap: 70px;
     grid-row-gap: 50px;
   }
@@ -27,7 +27,7 @@
 
 .contest-form .fieldset:not(:last-child) {
   @media (min-width: $tablet) {
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop) {
@@ -38,12 +38,9 @@
 .contest-form__header {
   @include margin-padding-reset;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  width: 320px;
   text-align: center;
   color: $font-medium;
 
@@ -73,6 +70,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    margin-top: 13px;
     order: 7;
     display: flex;
     justify-content: space-between;
@@ -80,12 +78,13 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: 14px;
     grid-column: 1/-1;
   }
 }
 
 .contest-form__button {
-  margin-bottom: 44px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
