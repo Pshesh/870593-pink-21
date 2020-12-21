@@ -1,6 +1,7 @@
 // BACKGROUND
 $bg-main: #ffffff;
 $bg-light: #f2f2f2;
+$bg-darker: #e5e5e5;
 $bg-medium: #283645;
 $bg-dark: #1d2631;
 $bg-black: transparentize(#000000, 0.7);
@@ -73,9 +74,13 @@ $table-border: #e5e5e5;
 
 // CONTEST BUTTON
 $contest-button: #2aab6d;
+$contest-button-hover: #1c9b5e;
+$contest-button-disabled: #e5e5e5;
 
-// FORM BORDER
+// FORM
 $form-border: #e5e5e5;
+$input-border-hover: #283645;
+$input-border-active: #d22856;
 
 // TOOLS
 $svg-color: #d22856;

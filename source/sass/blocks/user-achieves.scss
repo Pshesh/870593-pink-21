@@ -1,15 +1,15 @@
 .user-achieves {
   @include margin-padding-reset;
-  padding-top: 113px;
-  padding-bottom: 42px;
+  padding-top: 117px;
+  padding-bottom: 47px;
   border: none;
   background-color: $bg-light;
   position: relative;
 
   @media (min-width: $tablet) {
     order: 5;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 42px;
+    padding-bottom: 53px;
     border: 2px solid $form-border;
     border-radius: 2px;
     background-color: $bg-main;
@@ -18,9 +18,9 @@
   @media (min-width: $desktop) {
     grid-column: 1/-1;
     padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 46px;
-    padding-bottom: 68px;
+    padding-right: 50px;
+    padding-top: 42px;
+    padding-bottom: 61px;
   }
 }
 
@@ -38,7 +38,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 35px;
+  top: 39px;
 
   @media (min-width: $tablet) {
     line-height: 30px;
@@ -52,19 +52,25 @@
 .user-achieves__list {
   @include list-reset;
   @include margin-padding-reset;
+  margin: 0 auto;
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 56px;
+    grid-template-columns: 255px 240px 210px;
+    grid-column-gap: 59px;
   }
 }
 
 .user-achieves__item:not(:last-child) {
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 69px;
+    margin-bottom: 52px;
   }
 }
 
@@ -99,17 +105,74 @@
 }
 
 .user-achieves__label {
-  padding-left: 50px;
+  padding-left: 59px;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: $font-medium;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding-left: 117px;
   }
 
   @media (min-width: $desktop) {
+    padding-left: 55px;
+  }
+}
+
+.user-achieves__label--p0 {
+  @media (min-width: $desktop) {
     padding-left: 0;
   }
+}
+
+.user-achieves__label::before {
+  content: "";
+  width: 37px;
+  height: 37px;
+  background-color: $bg-main;
+  border: 2px solid $form-border;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+
+  @media (min-width: $tablet) {
+    left: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    left: -2px;
+  }
+}
+
+.user-achieves__label:hover::before {
+  border-color: $input-border-hover;
+  cursor: pointer;
+}
+
+.user-achieves__label:active::before {
+  outline: none;
+  border-color: $input-border-active;
+  cursor: pointer;
+}
+
+.user-achieves__input:checked + .user-achieves__label::after {
+  content: url("../img/tick.svg");
+  position: absolute;
+  left: 8px;
+  top: -1px;
+
+  @media (min-width: $tablet) {
+    left: 67px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 7px;
+  }
+}
+
+.user-achieves__label:hover::after {
+  cursor: pointer;
 }

@@ -1,14 +1,14 @@
 .user-contacts {
   @include margin-padding-reset;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 32px;
+  padding-bottom: 43px;
   border: none;
   background-color: $bg-main;
 
   @media (min-width: $tablet) {
     order: 4;
-    padding-top: 25px;
-    padding-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 27px;
     padding-left: 58px;
     padding-right: 58px;
     border: 2px solid $form-border;
@@ -16,7 +16,8 @@
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 23px;
+    padding-top: 27px;
+    padding-bottom: 13px;
     grid-column: 1/-1;
   }
 }
@@ -40,6 +41,12 @@
 .user-contacts__list {
   @include list-reset;
   @include margin-padding-reset;
+  margin: 0 auto;
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 
   @media (min-width: $desktop) {
     display: grid;
@@ -56,10 +63,10 @@
 }
 
 .user-contacts__item:not(:last-child) {
-  margin-bottom: 27px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 40px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop) {
@@ -68,18 +75,46 @@
 }
 
 .user-contacts__label {
-  padding-left: 23px;
+  padding-left: 24px;
   margin-bottom: 17px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   color: $font-optional;
   text-transform: uppercase;
+  position: relative;
 
   @media (min-width: $tablet) {
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 19px;
+    margin-top: 10px;
     margin-bottom: 0;
+  }
+}
+
+.user-contacts__label::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: -71px;
+    right: 2px;
+    width: 59px;
+    height: 59px;
+    background-color: $bg-darker;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.user-contacts__label--phone::before {
+  @media (min-width: $tablet) {
+    content: "";
+    background-image: url("../img/phone-icon.svg");
+  }
+}
+
+.user-contacts__label--email::before {
+  @media (min-width: $tablet) {
+    content: "";
+    background-image: url("../img/mail-icon.svg");
   }
 }
 
@@ -92,13 +127,23 @@
   padding-bottom: 14px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 100%;
   border: 2px solid $form-border;
   border-radius: 2px;
 
   @media (min-width: $tablet) {
+    padding-bottom: 15px;
     margin-top: 0;
+  }
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $input-border-active;
   }
 }
 
