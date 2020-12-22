@@ -3,7 +3,7 @@
 }
 
 .gallery__slogan {
-  margin: 54px auto 60px;
+  margin: 44px auto 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -71,10 +71,10 @@
 
 .gallery__user {
   @include margin-padding-reset;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 19px;
+  padding-bottom: 18px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 11px;
   background-color: $bg-light;
 
   @media (min-width: $tablet) {

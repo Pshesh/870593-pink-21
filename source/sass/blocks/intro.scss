@@ -79,6 +79,14 @@
   }
 }
 
+.intro--gallery {
+  min-height: 236px;
+}
+
+.intro--gallery .intro__slogan-wrapper {
+  padding-top: 94px;
+}
+
 .intro__slogan {
   @include margin-padding-reset;
   font-weight: 300;
