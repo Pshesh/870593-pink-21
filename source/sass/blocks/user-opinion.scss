@@ -1,6 +1,6 @@
 .user-opinion {
   @include margin-padding-reset;
-  padding-top: 74px;
+  padding-top: 72px;
   margin-bottom: 48px;
   border: none;
   background-color: $bg-main;
@@ -8,8 +8,8 @@
 
   @media (min-width: $tablet) {
     order: 6;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 31px;
+    padding-bottom: 51px;
     padding-left: 58px;
     padding-right: 58px;
     margin-bottom: 76px;
@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop) {
     grid-column: 1/-1;
+    padding-bottom: 45px;
   }
 }
 
@@ -37,7 +38,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 35px;
+  top: 38px;
 
   @media (min-width: $tablet) {
     line-height: 30px;
@@ -52,15 +53,36 @@
   font-size: 18px;
   line-height: 30px;
   color: $font-medium;
-  padding-top: 22px;
+  padding-top: 13px;
   padding-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
-  height: 197px;
+  height: 201px;
   border: 2px solid $form-border;
   border-radius: 2px;
   resize: none;
+  display: block;
+  margin: 0 auto;
+  width: 87.5%;
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $input-border-active;
+  }
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    padding-top: 14px;
+    height: 193px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 124px;
+  }
 }
 
 .user-opinion__text::placeholder {

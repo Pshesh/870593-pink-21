@@ -1,18 +1,22 @@
 .user-app {
   @include margin-padding-reset;
-  padding-top: 113px;
-  padding-bottom: 42px;
+  padding-top: 114px;
+  padding-bottom: 46px;
   border: none;
   background-color: $bg-light;
   position: relative;
 
   @media (min-width: $tablet) {
     order: 3;
-    padding-top: 47px;
-    padding-bottom: 66px;
+    padding-top: 43px;
+    padding-bottom: 58px;
     border: 2px solid $form-border;
     border-radius: 2px;
     background-color: $bg-main;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 16px;
   }
 }
 
@@ -30,7 +34,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 35px;
+  top: 39px;
 
   @media (min-width: $tablet) {
     line-height: 30px;
@@ -49,10 +53,16 @@
 .user-app__list {
   @include list-reset;
   @include margin-padding-reset;
+  margin: 0 auto;
+  width: 87.5%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .user-app__item:not(:last-child) {
-  margin-bottom: 51px;
+  margin-bottom: 45px;
 }
 
 .user-app__label {
@@ -61,6 +71,7 @@
   font-size: 18px;
   line-height: 30px;
   color: $font-medium;
+  position: relative;
 
   @media (min-width: $tablet) {
     padding-left: 119px;
@@ -68,5 +79,55 @@
 
   @media (min-width: $desktop) {
     padding-left: 133px;
+  }
+}
+
+.user-app__label::before {
+  content: "";
+  width: 41px;
+  height: 41px;
+  background-color: $bg-main;
+  border: 2px solid $form-border;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -7px;
+
+  @media (min-width: $tablet) {
+    left: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 71px;
+  }
+}
+
+.user-app__label:hover::before {
+  border-color: $input-border-hover;
+  cursor: pointer;
+}
+
+.user-app__label:active::before {
+  outline: none;
+  border-color: $input-border-active;
+  cursor: pointer;
+}
+
+.user-app__input:checked + .user-app__label::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 6px;
+  width: 15px;
+  height: 15px;
+  background-color: $font-optional;
+  border-radius: 50%;
+
+  @media (min-width: $tablet) {
+    left: 71px;
+  }
+
+  @media (min-width: $desktop) {
+    left: 84px;
   }
 }

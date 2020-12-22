@@ -26,7 +26,7 @@
   background-image: url("../img/back-mobile-inner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 237px;
+  min-height: 236px;
 
   @media (min-width: $tablet) {
     background-image: url("../img/back-tablet-inner.jpg");
@@ -35,7 +35,7 @@
 
   @media (min-width: $desktop) {
     background-image: url("../img/back-desktop-inner.jpg");
-    min-height: 400px;
+    min-height: 394px;
   }
 }
 
@@ -67,15 +67,16 @@
 }
 
 .intro--inner .intro__slogan-wrapper {
-  padding-top: 90px;
+  padding-top: 94px;
 
   @media (min-width: $tablet) {
     width: 600px;
-    padding-top: 170px;
+    padding-top: 177px;
   }
 
   @media (min-width: $desktop) {
     width: 750px;
+    padding-top: 168px;
   }
 }
 
