@@ -3,17 +3,17 @@
 }
 
 .upload__slogan-wrapper {
-  padding-top: 49px;
-  padding-bottom: 52px;
+  padding-top: 46px;
+  padding-bottom: 41px;
 
   @media (min-width: $tablet) {
-    padding-top: 73px;
-    padding-bottom: 78px;
+    padding-top: 63px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 67px;
-    padding-bottom: 75px;
+    padding-top: 58px;
+    padding-bottom: 67px;
   }
 }
 
@@ -33,7 +33,7 @@
 .upload__section {
   background-color: $bg-light;
   padding-top: 20px;
-  padding-bottom: 41px;
+  padding-bottom: 42px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -81,8 +81,10 @@
 }
 
 .upload__button-wrapper {
+  margin-top: 109px;
+
   @media (min-width: $tablet) {
-    padding-top: 67px;
+    margin-top: auto;
     grid-column: 2/-1;
     grid-row: 2/3;
   }

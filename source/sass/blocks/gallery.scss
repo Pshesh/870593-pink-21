@@ -3,7 +3,7 @@
 }
 
 .gallery__slogan {
-  margin: 54px auto 60px;
+  margin: 44px auto 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -12,23 +12,28 @@
   color: $font-medium;
 
   @media (min-width: $tablet) {
-    margin-top: 100px;
-    margin-bottom: 85px;
+    margin-top: 91px;
+    margin-bottom: 77px;
     font-size: 18px;
     width: 560px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 97px;
+    margin-bottom: 86px;
     width: 580px;
   }
 }
 
 .gallery__article {
+  position: relative;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
     margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 48px;
   }
 }
 
@@ -45,7 +50,7 @@
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 57px;
+    grid-row-gap: 54px;
   }
 }
 
@@ -57,30 +62,71 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   padding-left: 19px;
   padding-right: 20px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  @media (min-width: $tablet) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop) {
+    right: 131px;
+  }
 }
 
 .gallery__photo {
   display: block;
-  width: 100%;
-  height: auto;
+}
+
+// temporary
+.page .gallery__photo {
+  @media (min-width: $tablet) {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  @media (min-width: $desktop) {
+    height: 400px;
+  }
+}
+
+// temporary
+.gallery__article .gallery__photo {
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 509px;
+  }
 }
 
 .gallery__user {
   @include margin-padding-reset;
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 19px;
+  padding-bottom: 18px;
   padding-left: 17px;
-  padding-right: 17px;
+  padding-right: 11px;
   background-color: $bg-light;
 
   @media (min-width: $tablet) {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 26px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 23px;
+    padding-left: 27px;
+  }
+}
+
+.gallery__article .gallery__user {
+  @media (min-width: $tablet) {
+    padding-top: 23px;
   }
 }
