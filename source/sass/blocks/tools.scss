@@ -49,7 +49,7 @@
   }
 }
 
-.tools__label:last-child {
+.tools__label:nth-child(3) {
   @media (min-width: $tablet) {
     padding-left: 4px;
   }
