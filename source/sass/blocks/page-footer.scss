@@ -23,3 +23,17 @@
     min-height: 197px;
   }
 }
+
+.page-footer__wrapper--gallery {
+  padding-top: 40px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 19px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 68px;
+  }
+}
