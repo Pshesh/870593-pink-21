@@ -31,9 +31,30 @@
 .button--submit {
   color: $submitbtn-color;
   border: 3px solid $submitbtn-color;
+
+  &:hover {
+    background-color: $submitbtn-color;
+    color: $font-light;
+  }
+
+  &:active {
+    background-color: $submitbtn-color;
+    color: transparentize($font-light, 0.7);
+  }
 }
 
 .button--reset {
-  color: $resetbtn-color;
-  border: 3px solid $resetbtn-color;
+  color: transparentize($resetbtn-color, 0.9);
+  border: 3px solid transparentize($resetbtn-color, 0.9);
+
+  &:hover {
+    color: transparentize($resetbtn-color, 0.7);
+    border: 3px solid transparentize($resetbtn-color, 0.7);
+  }
+
+  &:active {
+    color: transparentize($font-light, 0.7);
+    border: 3px solid transparentize($resetbtn-color, 1);
+    background-color: transparentize($resetbtn-color, 0.7);
+  }
 }

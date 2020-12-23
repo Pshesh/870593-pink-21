@@ -31,7 +31,7 @@ $downloadbtn-down: transparentize($downloadbtn-hover, 0.7);
 
 // UPLOAD BUTTON
 $submitbtn-color: #d22856;
-$resetbtn-color: transparentize(#283645, 0.9);
+$resetbtn-color: #283645;
 
 // RESEARCH
 $research-color: #d22856;
@@ -83,6 +83,7 @@ $input-border-hover: #283645;
 $input-border-active: #d22856;
 
 // TOOLS
+$svg-color-dark: #283645;
 $svg-color: #d22856;
-$toggle-border: #d22856;
+$toggle: #d22856;
 $scale-border: transparentize(#283645, 0.9);
