@@ -23,19 +23,31 @@
 }
 
 .intro--inner {
-  background-image: url("../img/back-mobile-inner.png");
+  background-image: url("../img/back-mobile-inner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 236px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile-inner@2x.jpg");
+  }
+
   @media (min-width: $tablet) {
     background-image: url("../img/back-tablet-inner.jpg");
     min-height: 440px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet-inner@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/back-desktop-inner.jpg");
     min-height: 394px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop-inner@2x.jpg");
+    }
   }
 }
 
