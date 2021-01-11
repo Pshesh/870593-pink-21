@@ -1,24 +1,36 @@
 .intro {
   background-color: $bg-dark;
-  background-image: url("../img/back-mobile.png");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
   min-height: 733px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
 
   @media (min-width: 520px) {
     background-size: cover;
   }
 
   @media (min-width: $tablet) {
-    background-image: url("../img/back-tablet.png");
+    background-image: url("../img/back-tablet.jpg");
     background-size: cover;
     min-height: 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop) {
-    background-image: url("../img/back-desktop.png");
+    background-image: url("../img/back-desktop.jpg");
     min-height: 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
