@@ -64,14 +64,17 @@
   }
 }
 
+.upload__img {
+  @media (min-width: $tablet) {
+    grid-row: 1/-1;
+  }
+}
+
 .upload__photo {
   display: block;
   width: 100%;
   height: auto;
 
-  @media (min-width: $tablet) {
-    grid-row: 1/-1;
-  }
 }
 
 .upload__tools {
