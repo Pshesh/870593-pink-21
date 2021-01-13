@@ -107,14 +107,14 @@
 .user-contacts__label--phone::before {
   @media (min-width: $tablet) {
     content: "";
-    background-image: url("../img/phone-icon.svg");
+    background-image: url("../img/form-phone-icon.svg");
   }
 }
 
 .user-contacts__label--email::before {
   @media (min-width: $tablet) {
     content: "";
-    background-image: url("../img/mail-icon.svg");
+    background-image: url("../img/form-mail-icon.svg");
   }
 }
 
