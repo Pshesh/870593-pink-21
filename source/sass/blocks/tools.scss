@@ -63,43 +63,27 @@
 }
 
 .tools__img {
+  fill: $svg-color-dark;
   opacity: 0.3;
   cursor: pointer;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.3;
+    fill: $svg-color-dark;
   }
 
   &:active {
-    opacity: unset;
+    opacity: 0.5;
   }
 
   @media (min-width: $tablet) {
+    fill: $svg-color;
     opacity: unset;
   }
-}
-
-.tools__img:hover path {
-  fill: $svg-color-dark;
-}
-
-.tools__img:active path {
-  fill: $svg-color;
 }
 
 .tools__img--current {
   opacity: unset;
-}
-
-.tools__img path {
-  fill: $svg-color-dark;
-
-  @media (min-width: $tablet) {
-    fill: $svg-color;
-  }
-}
-
-.tools__img--current path {
   fill: $svg-color;
 }
 
@@ -153,6 +137,7 @@
   left: -17px;
   width: 240px;
   padding-top: 33px;
+  margin-top: 51px;
 
   @media (min-width: $tablet) {
     right: 25px;
@@ -160,6 +145,7 @@
     top: 10px;
     width: 202px;
     padding-top: 0;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop) {
