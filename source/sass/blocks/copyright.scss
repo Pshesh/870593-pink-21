@@ -1,21 +1,27 @@
 .copyright {
+  cursor: pointer;
+
+  @media (min-width: $desktop) {
+    margin-top: 11px;
+  }
+
+  &:hover .copyright__img {
+    fill: $html-logo-hover;
+  }
+
+  &:active .copyright__img {
+    fill: $html-logo-down;
+  }
+}
+
+.copyright__link {
   width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-
-  &:hover path {
-    fill: $html-logo-hover;
-  }
-
-  &:active path {
-    fill: $html-logo-down;
-  }
 
   @media (min-width: $desktop) {
     width: 153px;
-    margin-top: 11px;
   }
 }
 
@@ -35,6 +41,10 @@
   }
 }
 
-.copyright__logo path {
+.copyright__img {
   fill: $html-logo-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
 }

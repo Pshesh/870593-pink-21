@@ -13,6 +13,7 @@
   background-color: $contest-button;
   border: 2px solid $contest-button;
   border-radius: 2px;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     width: 300px;

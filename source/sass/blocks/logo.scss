@@ -1,12 +1,20 @@
 .logo {
   width: 145px;
-  margin-bottom: 7px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  cursor: pointer;
+
+  &:hover .logo__img {
+    fill: $plf-text-hover;
+  }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:active .logo__img {
+    fill: $plf-text-color;
   }
 
   @media (min-width: $tablet) {
@@ -14,14 +22,22 @@
   }
 
   @media (min-width: $desktop) {
+    width: 147px;
     margin-bottom: 14px;
   }
 }
 
-.logo:hover path {
-  fill: $plf-text-hover;
+
+.logo__img {
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
-.logo__txt path {
-  fill: $plf-text-color;
+.logo__img--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: inline;
+  }
 }
