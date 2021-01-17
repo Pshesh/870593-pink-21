@@ -1,5 +1,9 @@
 .upload {
   background-color: $bg-main;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 27px;
+  }
 }
 
 .upload__slogan-wrapper {

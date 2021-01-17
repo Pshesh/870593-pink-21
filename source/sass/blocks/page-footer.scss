@@ -3,8 +3,8 @@
 }
 
 .page-footer__wrapper {
-  padding-top: 33px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -12,28 +12,15 @@
   min-height: 275px;
 
   @media (min-width: $tablet) {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 36px;
+    padding-bottom: 23px;
     flex-direction: row;
     justify-content: space-between;
     min-height: 127px;
   }
 
   @media (min-width: $desktop) {
+    padding-top: 22px;
     min-height: 197px;
-  }
-}
-
-.page-footer__wrapper--gallery {
-  padding-top: 40px;
-  padding-bottom: 30px;
-
-  @media (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 19px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 30px;
   }
 }

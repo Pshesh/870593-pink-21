@@ -1,0 +1,38 @@
+.fieldset {
+  @media (min-width: $tablet) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.fieldset:not(:last-child) {
+  @media (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__legend {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 185px;
+  color: $font-optional;
+  text-transform: uppercase;
+  text-align: center;
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 39px;
+
+  @media (min-width: $tablet) {
+    line-height: 30px;
+    position: initial;
+  }
+}

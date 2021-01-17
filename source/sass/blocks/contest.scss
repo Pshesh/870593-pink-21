@@ -16,13 +16,13 @@
 
 .contest-form {
   padding-top: 44px;
-  padding-bottom: 23px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet) {
     padding-top: 91px;
-    padding-bottom: 54px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $desktop) {
@@ -31,23 +31,6 @@
     grid-template-columns: 435px 435px;
     grid-column-gap: 70px;
     grid-row-gap: 50px;
-  }
-}
-
-.fieldset {
-  @media (min-width: $tablet) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-
-.contest-form .fieldset:not(:last-child) {
-  @media (min-width: $tablet) {
-    margin-bottom: 52px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 0;
   }
 }
 
