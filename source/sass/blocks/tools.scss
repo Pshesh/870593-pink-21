@@ -260,3 +260,8 @@
     right: 40%;
   }
 }
+
+.tools__input:focus ~ .tools__toggle {
+  outline: 2px solid $bg-medium;
+  background-color: $toggle;
+}

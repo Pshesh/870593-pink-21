@@ -243,6 +243,7 @@
                     <use xlink:href="img/sprite/sprite.svg#upload-crop"></use>
                   </svg>
                   <span class="tools__scale tools__scale--crop">
+                    <input class="visually-hidden tools__input" type="range" id="crop" name="crop" min="1" max="100" step="1" value="80" aria-label="Обрезать">
                     <span class="tools__bar"></span>
                     <span class="tools__toggle tools__toggle--crop"></span>
                   </span>
@@ -253,6 +254,7 @@
                     <use xlink:href="img/sprite/sprite.svg#upload-fill"></use>
                   </svg>
                   <span class="tools__scale tools__scale--color">
+                    <input class="visually-hidden tools__input" type="range" id="color" name="color" min="1" max="100" step="1" value="15" aria-label="Заливка">
                     <span class="tools__bar"></span>
                     <span class="tools__toggle tools__toggle--color"></span>
                   </span>
@@ -263,14 +265,11 @@
                     <use xlink:href="img/sprite/sprite.svg#upload-contrast"></use>
                   </svg>
                   <span class="tools__scale tools__scale--light">
+                    <input class="visually-hidden tools__input" type="range" id="light" name="light" min="1" max="100" step="1" value="50" aria-label="Контраст">
                     <span class="tools__bar"></span>
                     <span class="tools__toggle tools__toggle--light"></span>
                   </span>
               </label>
-
-              <input class="visually-hidden" type="range" id="crop" name="crop" min="1" max="100" step="1" value="80" aria-label="Обрезать">
-              <input class="visually-hidden" type="range" id="color" name="color" min="1" max="100" step="1" value="15" aria-label="Заливка">
-              <input class="visually-hidden" type="range" id="light" name="light" min="1" max="100" step="1" value="50" aria-label="Контраст">
             </div>
 
             <div class="upload__button-wrapper">
