@@ -24,14 +24,7 @@
 
 .user-contacts__legend {
   display: none;
-  padding-left: 31px;
-  padding-right: 31px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 30px;
-  color: $font-optional;
-  text-transform: uppercase;
-  text-align: center;
+  width: 250px;
 
   @media (min-width: $tablet) {
     display: block;

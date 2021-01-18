@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
 
   <body class="page__body">
@@ -16,13 +16,13 @@
         <a class="page-header__logo-link">
           <span class="visually-hidden">Логотип Pink</span>
           <svg class="page-header__logo page-header__logo--mobile" width="74" height="23">
-            <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+            <use xlink:href="img/sprite/sprite.svg#logo-pink-header-mobile"></use>
           </svg>
           <svg class="page-header__logo page-header__logo--tablet" width="145" height="40">
-            <use xlink:href="img/sprite.svg#logo-header-tablet"></use>
+            <use xlink:href="img/sprite/sprite.svg#logo-pink-header-tablet"></use>
           </svg>
           <svg class="page-header__logo page-header__logo--desktop" width="147" height="40">
-            <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+            <use xlink:href="img/sprite/sprite.svg#logo-pink-header-desktop"></use>
           </svg>
         </a>
       </div>
@@ -76,7 +76,7 @@
             </fieldset>
 
             <fieldset class="contest-form__user-achieves user-achieves fieldset">
-                <legend class="user-achieves__legend">Ваши безбашенные достижения в путешествии</legend>
+                <legend class="user-achieves__legend fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
                   <ul class="user-achieves__list">
                     <li class="user-achieves__item user-achieves__item--shark">
                       <input class="user-achieves__input checkbox visually-hidden" type="checkbox" name="Shark" id="Shark" checked>
@@ -106,7 +106,7 @@
             </fieldset>
 
             <fieldset class="contest-form__user-contacts user-contacts fieldset">
-              <legend class="user-contacts__legend">Контактная информация</legend>
+              <legend class="user-contacts__legend fieldset__legend">Контактная информация</legend>
                 <ul class="user-contacts__list">
                   <li class="user-contacts__item">
                     <label class="user-contacts__label user-contacts__label--phone" for="phone">Номер телефона</label>
@@ -120,7 +120,7 @@
             </fieldset>
 
             <fieldset class="contest-form__user-app user-app fieldset">
-              <legend class="user-app__legend">С каким приложением путешествовали?</legend>
+              <legend class="user-app__legend fieldset__legend">С каким приложением путешествовали?</legend>
                 <ul class="user-app__list">
                   <li class="user-app__item">
                     <input class="user-app__input visually-hidden" type="radio" name="app" value="Ios" id="Ios" checked>
@@ -138,7 +138,7 @@
             </fieldset>
 
             <fieldset class="contest-form__user-opinion user-opinion fieldset">
-                <legend class="user-opinion__legend">Опишите свои эмоции</legend>
+                <legend class="user-opinion__legend fieldset__legend">Опишите свои эмоции</legend>
                   <textarea class="user-opinion__text" name="opinion" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
 
@@ -153,14 +153,14 @@
     <!-- FOOTER -->
     <footer class="page-footer">
       <div class="wrapper-center">
-        <div class="page-footer__wrapper page-footer__wrapper--gallery">
+        <div class="page-footer__wrapper">
 
           <div class="page-footer__logo logo">
             <svg class="logo__img" width="145" height="40">
-              <use xlink:href="img/sprite.svg#logo-footer"></use>
+              <use xlink:href="img/sprite/sprite.svg#logo-pink-footer"></use>
             </svg>
             <svg class="logo__img logo__img--desktop" width="147" height="40">
-              <use xlink:href="img/sprite.svg#logo-footer-desktop"></use>
+              <use xlink:href="img/sprite/sprite.svg#logo-pink-footer-desktop"></use>
             </svg>
           </div>
 
@@ -169,21 +169,21 @@
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Twitter">
                   <svg class="social__img social__img--twitter" width="18" height="14" viewbox="0 0 18 14">
-                    <use xlink:href="img/sprite.svg#twitter"></use>
+                    <use xlink:href="img/sprite/sprite.svg#social-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Facebook">
                   <svg class="social__img social__img--facebook" width="9" height="18" viewbox="0 0 9 18">
-                    <use xlink:href="img/sprite.svg#facebook"></use>
+                    <use xlink:href="img/sprite/sprite.svg#social-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="" aria-label="Youtube">
                   <svg class="social__img social__img--youtube" width="15" height="13" viewbox="0 0 15 13">
-                    <use xlink:href="img/sprite.svg#youtube"></use>
+                    <use xlink:href="img/sprite/sprite.svg#social-youtube"></use>
                   </svg>
                 </a>
               </li>
@@ -194,7 +194,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy Logo">
               <p class="copyright__text">Разработано</p>
               <svg class="copyright__img" width="27" height="34" viewbox="0 0 27 34">
-                <use xlink:href="img/sprite.svg#html-academy"></use>
+                <use xlink:href="img/sprite/sprite.svg#logo-html-academy"></use>
               </svg>
             </a>
           </div>
@@ -223,24 +223,6 @@
       </div>
     </div>
 
-    <script>
-      var navMain = document.querySelector('.nav');
-      var navToggle = document.querySelector('.nav__button');
-      var pageHeader = document.querySelector('.page-header')
-
-      navMain.classList.remove('nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--closed')) {
-          pageHeader.classList.remove('page-header--closed');
-          navMain.classList.remove('nav--closed');
-          navMain.classList.add('nav--opened');
-        } else {
-          pageHeader.classList.add('page-header--closed');
-          navMain.classList.add('nav--closed');
-          navMain.classList.remove('nav--opened');
-        }
-      });
-    </script>
+    <script src="js/nav.min.js"></script>
   </body>
 </html>
