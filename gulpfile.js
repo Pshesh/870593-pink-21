@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify-es").default;
+const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
@@ -26,8 +26,8 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("styles.min.css"))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
@@ -93,7 +93,7 @@ exports.sprite = sprite;
 
 // Copy
 
-const copy = () => {
+const copy = (done) => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
@@ -103,6 +103,7 @@ const copy = () => {
       base: "source"
     })
     .pipe(gulp.dest("build"))
+    done();
 }
 
 exports.copy = copy;
@@ -117,10 +118,10 @@ exports.clean = clean;
 
 // Server
 
-function server(done) {
+const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -143,7 +144,7 @@ const reload = done => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/nav.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 // Build
@@ -159,7 +160,7 @@ const build = gulp.series(
     images,
     createWebp
   )
-)
+);
 
 exports.build = build;
 
