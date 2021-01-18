@@ -91,26 +91,31 @@
 }
 
 .user-app__label:active::before {
-  outline: none;
   border-color: $input-border-active;
   cursor: pointer;
 }
 
-.user-app__input:checked + .user-app__label::after {
-  content: "";
-  position: absolute;
-  left: 13px;
-  top: 6px;
-  width: 15px;
-  height: 15px;
-  background-color: $font-optional;
-  border-radius: 50%;
+.user-app__input {
+  &:checked + .user-app__label::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 6px;
+    width: 15px;
+    height: 15px;
+    background-color: $font-optional;
+    border-radius: 50%;
 
-  @media (min-width: $tablet) {
-    left: 71px;
+    @media (min-width: $tablet) {
+      left: 71px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 84px;
+    }
   }
 
-  @media (min-width: $desktop) {
-    left: 84px;
+  &:focus + .user-app__label::before {
+    outline: 2px solid $input-border-active;
   }
 }
