@@ -61,18 +61,17 @@
   }
 }
 
-.user__rate::before {
-  content: "";
+.user__rate-button {
+  @include button-reset;
+  background-color: transparent;
   position: absolute;
-  background-image: url("../img/rate-heart.svg");
-  background-repeat: no-repeat;
   width: 13px;
   height: 12px;
-  left: -31px;
-  top: 7px;
+  left: -37px;
+  top: 5px;
 
   @media (min-width: $tablet) {
-    left: 227px;
+    left: 221px;
   }
 }
 
@@ -84,11 +83,11 @@
   }
 }
 
-.user__rate--article::before {
+.user__rate--article .user__rate-button {
   top: 6px;
 
   @media (min-width: $tablet) {
-    left: 106px;
+    left: 100px;
   }
 }
 

@@ -1,7 +1,6 @@
 .nav {
   @media (min-width: $desktop) {
-    padding-left: 153px;
-    flex-grow: 1;
+    padding-left: 133px;
   }
 }
 
@@ -60,6 +59,11 @@
   }
 }
 
+// .nav--nojs .nav__list {
+//   display: block;
+//   margin-bottom: -66px;
+// }
+
 .nav--opened .nav__button {
   width: 23px;
   height: 23px;
@@ -116,8 +120,15 @@
 
   @media (min-width: $desktop) {
     padding-top: 20px;
+    margin: 0 20px;
     border-top: none;
     border-bottom: none;
+  }
+}
+
+.nav__item:nth-of-type(4n) {
+  @media (min-width: $desktop) {
+    margin-right: 0;
   }
 }
 

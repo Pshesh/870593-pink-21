@@ -32,7 +32,7 @@
   }
 }
 
-.tools__label:first-child {
+.tools__label:not(:last-child) {
   @media (min-width: $tablet) {
     margin-bottom: 45px;
   }
@@ -42,15 +42,15 @@
   }
 }
 
-.tools__label:nth-child(2) {
-  @media (min-width: $tablet) {
-    margin-bottom: 42px;
-  }
+// .tools__label:nth-child(2) {
+//   @media (min-width: $tablet) {
+//     margin-bottom: 42px;
+//   }
 
-  @media (min-width: $desktop) {
-    margin-bottom: 26px;
-  }
-}
+//   @media (min-width: $desktop) {
+//     margin-bottom: 26px;
+//   }
+// }
 
 .tools__label:nth-child(3) {
   @media (min-width: $tablet) {

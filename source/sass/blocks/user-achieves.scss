@@ -17,10 +17,7 @@
 
   @media (min-width: $desktop) {
     grid-column: 1/-1;
-    padding-left: 60px;
-    padding-right: 50px;
-    padding-top: 42px;
-    padding-bottom: 61px;
+    padding: 42px 60px 61px;
   }
 }
 
@@ -46,22 +43,9 @@
 
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: 255px 240px 210px;
-    grid-column-gap: 59px;
-  }
-}
-
-.user-achieves__item:not(:last-child) {
-  margin-bottom: 52px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 52px;
-  }
-}
-
-.user-achieves__item:nth-child(2n) {
-  @media (min-width: $desktop) {
-    margin-bottom: 0;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+    grid-row-gap: 52px;
   }
 }
 

@@ -3,6 +3,7 @@
   margin-bottom: -66px;
   background-color: $bg-medium;
   position: relative;
+  // z-index: 4;
 
   @media (min-width: $tablet) {
     margin-bottom: -110px;
@@ -29,6 +30,11 @@
     border-bottom: none;
   }
 }
+
+// .page-header--nojs {
+//   position: initial;
+//   background-color: $bg-medium;
+// }
 
 .page-header__logo-wrapper {
   padding: 20px;
