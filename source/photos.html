@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Проект Пинк в рамках интенсива HTML-Academy">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" type="font/woff2" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="js/nav.min.js" as="script">
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
 
@@ -13,7 +18,7 @@
 
       <!-- LOGO AND HAMBURGER -->
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link">
+        <a class="page-header__logo-link" href="index.html">
           <span class="visually-hidden">Логотип Pink</span>
           <svg class="page-header__logo page-header__logo--mobile" width="74" height="23">
             <use xlink:href="img/sprite/sprite.svg#logo-pink-header-mobile"></use>
@@ -32,7 +37,7 @@
         <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
-          <li class="nav__item nav__item--current"><a class="nav__link">Фотографии</a></li>
+          <li class="nav__item nav__item--current"><a class="nav__link" href="#">Фотографии</a></li>
           <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
           <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
         </ul>
@@ -76,7 +81,7 @@
               <div>
                 <cite class="user__name">Анна <span class="user__status">(5 минут назад)</span></cite>
                 <p class="user__text user__text--article">
-                  Прыгать или нет? Напишите в комментарии свой совет и<br> смотрите
+                  Прыгать или нет? Напишите в комментарии свой совет и<br>&nbsp;смотрите
                   прямую трансляцию в<br> перископе, задавайте свои вопросы!
                 </p>
               </div>
@@ -227,7 +232,7 @@
                   <source type="image/webp" srcset="img/photo-7-mobile.webp 1x, img/photo-7-mobile@2x.webp 2x">
                   <source media="(min-width: 970px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
                   <source media="(min-width: 620px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
-                  <img class="upload__photo" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="Ваша фотография">
+                  <img class="upload__photo" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280" height="374" loading="lazy" alt="Ваша фотография">
                 </picture>
               </div>
 
@@ -238,6 +243,7 @@
                     <use xlink:href="img/sprite/sprite.svg#upload-crop"></use>
                   </svg>
                   <span class="tools__scale tools__scale--crop">
+                    <input class="visually-hidden tools__input" type="range" id="crop" name="crop" min="1" max="100" step="1" value="80" aria-label="Обрезать">
                     <span class="tools__bar"></span>
                     <span class="tools__toggle tools__toggle--crop"></span>
                   </span>
@@ -248,6 +254,7 @@
                     <use xlink:href="img/sprite/sprite.svg#upload-fill"></use>
                   </svg>
                   <span class="tools__scale tools__scale--color">
+                    <input class="visually-hidden tools__input" type="range" id="color" name="color" min="1" max="100" step="1" value="15" aria-label="Заливка">
                     <span class="tools__bar"></span>
                     <span class="tools__toggle tools__toggle--color"></span>
                   </span>
@@ -258,14 +265,11 @@
                     <use xlink:href="img/sprite/sprite.svg#upload-contrast"></use>
                   </svg>
                   <span class="tools__scale tools__scale--light">
+                    <input class="visually-hidden tools__input" type="range" id="light" name="light" min="1" max="100" step="1" value="50" aria-label="Контраст">
                     <span class="tools__bar"></span>
                     <span class="tools__toggle tools__toggle--light"></span>
                   </span>
               </label>
-
-              <input class="visually-hidden" type="range" id="crop" name="crop" min="1" max="100" step="1" value="80">
-              <input class="visually-hidden" type="range" id="color" name="color" min="1" max="100" step="1" value="15">
-              <input class="visually-hidden" type="range" id="light" name="light" min="1" max="100" step="1" value="50">
             </div>
 
             <div class="upload__button-wrapper">
@@ -295,21 +299,21 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Twitter">
+                <a class="social__link" href="https://twitter.com/" aria-label="Twitter">
                   <svg class="social__img social__img--twitter" width="18" height="14" viewbox="0 0 18 14">
                     <use xlink:href="img/sprite/sprite.svg#social-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Facebook">
+                <a class="social__link" href="https://www.facebook.com/" aria-label="Facebook">
                   <svg class="social__img social__img--facebook" width="9" height="18" viewbox="0 0 9 18">
                     <use xlink:href="img/sprite/sprite.svg#social-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Youtube">
+                <a class="social__link" href="https://www.youtube.com/" aria-label="Youtube">
                   <svg class="social__img social__img--youtube" width="15" height="13" viewbox="0 0 15 13">
                     <use xlink:href="img/sprite/sprite.svg#social-youtube"></use>
                   </svg>

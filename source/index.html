@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Проект Пинк в рамках интенсива HTML-Academy">
   <title>HTML Academy: Пинк</title>
+  <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="js/nav.min.js" as="script">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
@@ -15,7 +20,7 @@
 
       <!-- LOGO AND HAMBURGER -->
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link">
+        <a class="page-header__logo-link" href="#">
           <span class="visually-hidden">Логотип Pink</span>
           <svg class="page-header__logo page-header__logo--mobile" width="74" height="23">
             <use xlink:href="img/sprite/sprite.svg#logo-pink-header-mobile"></use>
@@ -33,7 +38,7 @@
       <nav class="page-header__nav nav nav--closed nav--nojs">
         <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="nav__list">
-          <li class="nav__item nav__item--current"><a class="nav__link">Главная</a></li>
+          <li class="nav__item nav__item--current"><a class="nav__link" href="#">Главная</a></li>
           <li class="nav__item"><a class="nav__link" href="photos.html">Фотографии</a></li>
           <li class="nav__item"><a class="nav__link" href="form.html">Конкурс</a></li>
           <li class="nav__item"><a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
@@ -51,7 +56,7 @@
 
         <div class="intro__wrapper">
           <div class="intro__slogan-wrapper">
-            <p class="intro__slogan">Взгляните <br class="intro__slogan-br">на жизнь <br class="intro__slogan-br">иначе!</p>
+            <p class="intro__slogan">Взгляните&nbsp;<br class="intro__slogan-br">на жизнь <br class="intro__slogan-br">иначе!</p>
           </div>
 
           <div class="intro__download-wrapper">
@@ -113,7 +118,7 @@
             <li class="features__item features__item--world">
               <div>
                 <h3 class="features__title">Меняет мир вокруг</h3>
-                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
+                <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br>&nbsp;усилить эффект</p>
               </div>
             </li>
             <li class="features__item features__item--friends">
@@ -131,8 +136,8 @@
       <section class="page-main__research research">
         <div class="wrapper-center">
           <div class="research__wrapper">
-            <h2 class="research__title">Эффект <br>на 24 часа!</h2>
-            <p class="research__text">Британские ученые провели исследования<br>и доказали,<br>что положительный эффект<br>от использования приложения длится целые сутки!</p>
+            <h2 class="research__title">Эффект&nbsp;<br>на 24 часа!</h2>
+            <p class="research__text">Британские ученые провели исследования<br>&nbsp;и доказали,<br>что положительный эффект<br>&nbsp;от использования приложения длится целые сутки!</p>
             <a href="#" class="research__link" aria-label="Перейти на страницу исследования">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -164,9 +169,15 @@
             </button>
 
             <div class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
-              <button class="slider__toggle" type="button"></button>
+              <button class="slider__toggle slider__toggle--current" type="button">
+                <span class="visually-hidden">Первый отзыв</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Второй отзыв</span>
+              </button>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Третий отзыв</span>
+              </button>
             </div>
 
           </div>
@@ -221,9 +232,15 @@
           </table>
 
           <div class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button"></button>
-            <button class="slider__toggle  slider__toggle--current" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Первый тариф</span>
+            </button>
+            <button class="slider__toggle  slider__toggle--current" type="button">
+              <span class="visually-hidden">Второй тариф</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Третий тариф</span>
+            </button>
           </div>
         </div>
 
@@ -280,21 +297,21 @@
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Twitter">
+                <a class="social__link" href="https://twitter.com/" aria-label="Twitter">
                   <svg class="social__img social__img--twitter" width="18" height="14" viewbox="0 0 18 14">
                     <use xlink:href="img/sprite/sprite.svg#social-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Facebook">
+                <a class="social__link" href="https://www.facebook.com/" aria-label="Facebook">
                   <svg class="social__img social__img--facebook" width="9" height="18" viewbox="0 0 9 18">
                     <use xlink:href="img/sprite/sprite.svg#social-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="" aria-label="Youtube">
+                <a class="social__link" href="https://www.youtube.com/" aria-label="Youtube">
                   <svg class="social__img social__img--youtube" width="15" height="13" viewbox="0 0 15 13">
                     <use xlink:href="img/sprite/sprite.svg#social-youtube"></use>
                   </svg>

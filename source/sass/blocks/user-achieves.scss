@@ -143,18 +143,24 @@
   cursor: pointer;
 }
 
-.user-achieves__input:checked + .user-achieves__label::after {
-  content: url("../img/form-tick.svg");
-  position: absolute;
-  left: 8px;
-  top: -1px;
+.user-achieves__input {
+  &:checked + .user-achieves__label::after {
+    content: url("../img/form-tick.svg");
+    position: absolute;
+    left: 8px;
+    top: -1px;
 
-  @media (min-width: $tablet) {
-    left: 67px;
+    @media (min-width: $tablet) {
+      left: 67px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 7px;
+    }
   }
 
-  @media (min-width: $desktop) {
-    left: 7px;
+  &:focus + .user-achieves__label::before {
+    outline: 2px solid $input-border-active;
   }
 }
 
