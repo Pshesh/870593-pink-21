@@ -49,6 +49,14 @@
   }
 }
 
+.user-achieves__item:not(:last-child) {
+  margin-bottom: 52px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
 .user-achieves__item--shark {
   order: 1;
 }
@@ -87,12 +95,6 @@
 
   @media (min-width: $desktop) {
     padding-left: 55px;
-  }
-}
-
-.user-achieves__label--p0 {
-  @media (min-width: $desktop) {
-    padding-left: 0;
   }
 }
 
